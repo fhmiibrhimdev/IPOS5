@@ -8,3 +8,119 @@
 
 @import "tailwindcss/utilities";
 /* @import "./custom-utilities.css"; */
+
+@layer components {
+    .show-entries {
+        @apply ml-4 flex justify-center lg:justify-start;
+    }
+
+    .search-column {
+        @apply mb-5 mt-3 flex justify-center lg:mt-[-45px] lg:justify-start;
+    }
+
+    .btn-modal {
+        @apply fixed bottom-12 right-7 z-40 h-14 w-14 rounded-full bg-slate-900 text-white shadow-2xl hover:border-slate-600 hover:bg-slate-700;
+    }
+}
+
+@layer utilities {
+    body {
+        @apply tracking-wider;
+    }
+
+    .section > .section-header {
+        @apply !px-[50px] lg:!px-[35px] rounded-none shadow-md shadow-gray-200 lg:rounded-lg;
+    }
+
+    .section > .section-header > h1 {
+        @apply mb-1 text-lg tracking-wider;
+    }
+
+    .card-body {
+        @apply px-0
+    }
+
+    table {
+        @apply w-full table-fixed;
+    }
+
+    table > thead > tr {
+        @apply text-xs text-gray-950 uppercase tracking-widest;
+    }
+
+    table > tbody > tr {
+        @apply text-gray-700;
+    }
+
+    table > thead > tr > th {
+        @apply bg-gray-100 p-4 font-bold text-sm text-gray-700;
+    }
+
+    table > tbody > tr > td {
+        @apply border-b border-gray-100 px-4 py-2;
+    }
+
+    table > tbody {
+        @apply text-black;
+    }
+
+    .card-body > h3 {
+        @apply mb-5 ml-4 text-base text-black;
+    }
+
+    .show-entries > p.show-entries-show {
+        @apply mr-1 mt-1 text-gray-800;
+    }
+
+    .show-entries > p.show-entries-entries {
+        @apply ml-1 mt-1 text-gray-800;
+    }
+
+    .show-entries > select {
+        @apply rounded-lg border px-4 py-1 border-gray-200;
+    }
+
+    .search-column > p {
+        @apply ml-0 mr-1 mt-1 text-gray-800 lg:ml-auto;
+    }
+
+    .search-column > input {
+        @apply mr-4 w-2/3 rounded-lg border border-gray-200 lg:w-1/4;
+    }
+
+    .main-content {
+        @apply px-0 lg:pl-[280px] lg:pr-[30px];
+    }
+
+    .card {
+        @apply rounded-none shadow-md shadow-gray-300 lg:rounded-lg;
+    }
+
+    .card > .card-body {
+        @apply px-0
+    }
+
+    .card > h3 {
+        @apply tracking-wider text-[#34395e] ml-6 mt-6 mb-5 lg:mb-1 text-base font-semibold
+    }
+
+    .section-body {
+        @apply mt-[-10px];
+    }
+
+    input.form-control {
+        @apply rounded-lg border border-gray-200 text-sm;
+    }
+
+    select.form-control {
+        @apply rounded-lg;
+    }
+
+    textarea.form-control {
+        @apply rounded-lg;
+    }
+
+    .navbar.navbar-expand-lg.main-navbar {
+        @apply px-0 lg:px-5;
+    }
+}

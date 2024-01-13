@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Livewire\Dashboard\Dashboard;
+use App\Livewire\MasterData\Bank;
+use App\Livewire\MasterData\Emoney;
+use App\Livewire\MasterData\Jenis;
+use App\Livewire\MasterData\Satuan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +35,10 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::group(['middleware' => ['auth', 'role:admin']], function() {
+    Route::get('master-data/satuan', Satuan::class);
+    Route::get('master-data/jenis', Jenis::class);
+    Route::get('master-data/bank', Bank::class);
+    Route::get('master-data/emoney', Emoney::class);
 });
 
 Route::group(['middleware' => ['auth', 'role:user']], function() {
