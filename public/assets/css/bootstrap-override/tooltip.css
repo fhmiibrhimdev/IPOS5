@@ -1,0 +1,6 @@
+.tooltip {
+    @apply text-xs;
+}
+.tooltip-inner {
+    @apply px-[13px] py-[7px];
+}

@@ -1,0 +1,463 @@
+.main-sidebar {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] fixed h-full w-[250px] bg-white z-[880] left-0 top-0;
+}
+.main-sidebar,
+.navbar,
+.main-content,
+.main-footer {
+    @apply transition-all duration-[0.5s];
+}
+body.sidebar-gone .main-sidebar {
+    @apply left-[-250px];
+}
+body.sidebar-mini .hide-sidebar-mini {
+    @apply hidden;
+}
+body.sidebar-mini .main-sidebar {
+    @apply w-[65px] absolute shadow-none after:shadow-[0_4px_8px_rgba(0,0,0,0.03)] after:content-['_'] after:fixed after:bg-white after:w-[65px] after:h-full after:z-[-1] after:opacity-0 after:left-0 after:top-0;
+    overflow: initial !important;
+}
+body.sidebar-mini .main-sidebar:after {
+    animation-name: mini-sidebar;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes mini-sidebar {
+    from {
+        @apply opacity-0;
+    }
+    to {
+        @apply opacity-100;
+    }
+}
+body.sidebar-mini .main-sidebar .sidebar-brand {
+    @apply hidden;
+}
+body.sidebar-mini .main-sidebar .sidebar-brand-sm {
+    @apply block;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li {
+    @apply p-2.5;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li.menu-header {
+    @apply text-[0] h-0.5 p-0;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a {
+    @apply h-[45px] justify-center p-0 rounded-[3px];
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .ion,
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fas,
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .far,
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fab,
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .fal {
+    @apply text-xl m-0;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a span {
+    @apply hidden;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a .badge {
+    @apply absolute text-[10px] p-[5px] right-1 top-1;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li > a.has-dropdown:after {
+    @apply content-[initial];
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
+    @apply shadow-[0_4px_8px_#acb5f6] bg-[#6777ef] text-white;
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu {
+    @apply absolute bg-white w-[200px] hidden shadow-[0_0_30px_rgba(0,0,0,0.03)] left-[65px] top-2.5;
+}
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    > li
+    ul.dropdown-menu
+    li
+    > a:focus,
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    > li
+    ul.dropdown-menu
+    li.active
+    > a,
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    > li
+    ul.dropdown-menu
+    li.active
+    > a:hover {
+    @apply text-white bg-[#6777ef];
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu li a {
+    @apply h-10 bg-white px-5 py-0;
+}
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    > li
+    ul.dropdown-menu
+    li
+    a.has-dropdown:after {
+    @apply content-[""] font-black absolute translate-x-0 -translate-y-2/4 text-xs right-5 top-2/4;
+    font-family: "Font Awesome 5 Free";
+    -webkit-transform: translate(0, -50%);
+}
+body.sidebar-mini .main-sidebar .sidebar-menu li:hover > ul.dropdown-menu {
+    @apply block;
+}
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    li:hover
+    > ul.dropdown-menu
+    li:hover
+    > a {
+    @apply bg-[#fcfcfd];
+}
+body.sidebar-mini
+    .main-sidebar
+    .sidebar-menu
+    li:hover
+    > ul.dropdown-menu
+    li
+    .dropdown-menu {
+    @apply p-0 left-[200px];
+}
+body.sidebar-mini .navbar {
+    @apply left-[65px];
+}
+body.sidebar-mini .main-content,
+body.sidebar-mini .main-footer {
+    @apply pl-[90px];
+}
+body.layout-2 .navbar-bg {
+    @apply z-[889] h-[70px];
+}
+body.layout-2 .navbar {
+    @apply z-[890] left-0;
+}
+body.layout-2 .main-wrapper {
+    @apply flex flex-wrap px-[50px] py-0;
+}
+body.layout-2 .main-sidebar,
+body.layout-2 .main-content,
+body.layout-2 .main-footer {
+    @apply shrink-0 grow-0;
+}
+body.layout-2 .main-sidebar {
+    @apply bg-transparent shadow-none static w-[200px] mt-[100px];
+}
+body.layout-2 .main-sidebar .sidebar-menu li.menu-header {
+    @apply p-0;
+}
+body.layout-2 .main-sidebar .sidebar-menu li a {
+    @apply p-0 hover:text-[#6777ef] hover:bg-transparent;
+}
+body.layout-2 .main-sidebar .sidebar-menu li a i {
+    @apply w-2.5;
+}
+body.layout-2 .main-sidebar .sidebar-menu li a.has-dropdown:after {
+    @apply right-0;
+}
+body.layout-2 .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
+    @apply pl-[34px];
+}
+body.layout-2 .main-content {
+    @apply w-[calc(100%_-_200px)] pl-[30px] pr-0 pt-[107px];
+}
+body.layout-2 .main-footer {
+    @apply w-[calc(100%_-_230px)] ml-[230px] px-0;
+}
+body.layout-3 .navbar {
+    @apply inset-x-0;
+}
+body.layout-3 .navbar.navbar-secondary {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white z-[889] p-0 top-[70px];
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item.active
+    > .nav-link {
+    @apply text-[#6777ef] before:left-[35px] before:right-0;
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item:first-child
+    .nav-link {
+    @apply !ml-0;
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item:last-child
+    .nav-link {
+    @apply mr-0;
+}
+body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link {
+    @apply text-[#868e96] text-[13px] tracking-[0.3px] h-[70px] relative !mx-[15px] !p-0 before:content-['_'] before:absolute before:h-0.5 before:bg-[#6777ef] before:transition-all before:duration-[0.5s] before:bottom-0 before:inset-x-[initial] hover:text-[#191d21];
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    > .nav-link.has-dropdown {
+    @apply !mr-[35px] after:content-[""] after:font-black after:absolute after:translate-x-0 after:-translate-y-2/4 after:text-xs after:-right-5 after:top-2/4;
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    > .nav-link.has-dropdown:after {
+    font-family: "Font Awesome 5 Free";
+    -webkit-transform: translate(0, -50%);
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    > .nav-link
+    span {
+    @apply leading-[74px];
+}
+body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link i {
+    @apply w-[30px] text-base;
+}
+body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item .dropdown-menu {
+    @apply p-0;
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item
+    .nav-link {
+    @apply text-[#6c757d] font-semibold tracking-[0.3px] !px-5 !p-[7px];
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item
+    .nav-link.has-dropdown:after {
+    @apply content-[""] font-black absolute translate-x-0 -translate-y-2/4 text-xs right-2  top-2/4;
+    font-family: "Font Awesome 5 Free";
+    -webkit-transform: translate(0, -50%);
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item:hover
+    > .nav-link {
+    @apply bg-[#fcfcfd] text-[#191d21];
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item:hover
+    > .dropdown-menu {
+    @apply block top-[-5px] left-[200px];
+}
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item.active
+    > .nav-link,
+body.layout-3
+    .navbar.navbar-secondary
+    .navbar-nav
+    > .nav-item
+    .dropdown-menu
+    .nav-item
+    .nav-link:focus {
+    @apply bg-[#6777ef] text-white;
+}
+body.layout-3 .main-content {
+    @apply pt-[170px] px-0;
+}
+body.layout-3 .main-footer {
+    @apply px-0;
+}
+.main-sidebar .sidebar-brand {
+    @apply inline-block w-full text-center h-[60px] leading-[60px];
+}
+.main-sidebar .sidebar-brand.sidebar-brand-sm {
+    @apply hidden;
+}
+.main-sidebar .sidebar-brand a {
+    @apply no-underline uppercase tracking-[1.5px] font-bold text-black;
+}
+.main-sidebar .sidebar-user {
+    @apply inline-block w-full mb-2.5 p-2.5;
+}
+.main-sidebar .sidebar-user .sidebar-user-picture {
+    @apply float-left mr-2.5;
+}
+.main-sidebar .sidebar-user .sidebar-user-picture img {
+    @apply w-[50px] rounded-[50%];
+}
+.main-sidebar .sidebar-menu {
+    @apply m-0 p-0;
+}
+.main-sidebar .sidebar-menu li {
+    @apply block;
+}
+.main-sidebar .sidebar-menu li.menu-header {
+    @apply text-[#bcc1c6] text-[10px] uppercase tracking-[1.3px] font-semibold px-[15px] py-[3px];
+}
+.main-sidebar .sidebar-menu li.menu-header:not(:first-child) {
+    @apply mt-2.5;
+}
+.main-sidebar .sidebar-menu li a {
+    @apply relative flex items-center h-[50px] w-full tracking-[0.3px] text-[#868e96] no-underline px-5 py-0 hover:bg-[#fcfcfd];
+}
+.main-sidebar .sidebar-menu li a .badge {
+    @apply float-right mt-0.5 px-2.5 py-[5px];
+}
+.main-sidebar .sidebar-menu li a i {
+    @apply w-7 text-center mr-5;
+}
+.main-sidebar .sidebar-menu li a span {
+    @apply w-full mt-[3px];
+}
+.main-sidebar .sidebar-menu li.active a {
+    @apply text-[#6777ef] font-semibold bg-[#fcfcfd];
+}
+.main-sidebar .sidebar-menu li.active ul.dropdown-menu {
+    @apply bg-[#fcfcfd];
+}
+.main-sidebar .sidebar-menu li a.has-dropdown:after {
+    @apply content-[""] font-black absolute translate-x-0 -translate-y-2/4 text-xs right-5 top-2/4;
+    font-family: "Font Awesome 5 Free";
+    -webkit-transform: translate(0, -50%);
+}
+.main-sidebar .sidebar-menu li.active > ul.dropdown-menu {
+    @apply block;
+}
+.main-sidebar .sidebar-menu li.active > ul.dropdown-menu li a:hover {
+    @apply bg-[#fcfcfd];
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu {
+    @apply hidden static float-none w-full shadow-none bg-transparent m-0 p-0;
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu li a {
+    @apply text-[#868e96] h-[35px] font-normal pl-[65px] hover:text-[#6777ef] hover:bg-inherit;
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu li.active > a {
+    @apply text-[#6777ef] font-semibold;
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu li a i {
+    @apply text-center mt-px;
+}
+.main-sidebar .sidebar-menu li ul.dropdown-menu li ul.dropdown-menu {
+    @apply pl-2.5;
+}
+.main-content {
+    @apply w-full relative pl-[280px] pr-[30px] pt-20;
+}
+.main-footer {
+    @apply text-[#98a6ad] inline-block w-full mt-10 pl-[280px] pr-[30px] py-5 border-t-[#e3eaef] border-t border-transparent border-solid;
+}
+.main-footer .footer-left {
+    @apply float-left;
+}
+.main-footer .footer-right {
+    @apply float-right;
+}
+.simple-footer {
+    @apply text-center my-10;
+}
+body:not(.sidebar-mini) .sidebar-style-1 .sidebar-menu li.active a {
+    @apply bg-[#6777ef] text-white;
+}
+body:not(.sidebar-mini)
+    .sidebar-style-1
+    .sidebar-menu
+    li.active
+    ul.dropdown-menu
+    li
+    a {
+    @apply text-[#e8ebfd] hover:bg-[#6777ef] hover:text-white;
+}
+body:not(.sidebar-mini)
+    .sidebar-style-1
+    .sidebar-menu
+    li.active
+    ul.dropdown-menu
+    li.active
+    a {
+    @apply text-white;
+}
+body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a {
+    @apply bg-transparent relative pl-4 before:content-[''] before:absolute before:-translate-y-2/4 before:h-[25px] before:w-1 before:bg-[#6777ef] before:left-0 before:top-2/4;
+}
+body:not(.sidebar-mini)
+    .sidebar-style-2
+    .sidebar-menu
+    li.active
+    ul.dropdown-menu
+    li
+    a {
+    @apply bg-white pl-[61px];
+}
+@media (max-width: 1024px) {
+    .sidebar-gone-hide {
+        @apply hidden;
+    }
+    .sidebar-gone-show {
+        @apply !block;
+    }
+    .main-sidebar {
+        @apply fixed z-[891] mt-0;
+    }
+    body.layout-2 .main-wrapper,
+    body.layout-3 .main-wrapper {
+        @apply w-full block p-0;
+    }
+    .main-content {
+        @apply w-full px-[30px];
+    }
+    .main-footer {
+        @apply pl-[30px];
+    }
+    body.search-show {
+        @apply overflow-hidden;
+    }
+    body.search-show .navbar {
+        @apply z-[892];
+    }
+    body.sidebar-show {
+        @apply overflow-hidden;
+    }
+    body.search-show:before,
+    body.sidebar-show:before {
+        @apply content-[''] fixed w-full h-full bg-black opacity-0 z-[891] inset-x-0;
+        -webkit-animation-name: fadeinbackdrop;
+        animation-name: fadeinbackdrop;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes fadeinbackdrop {
+        to {
+            @apply opacity-60;
+        }
+    }
+    @keyframes fadeinbackdrop {
+        to {
+            @apply opacity-60;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+/* 3.17 Grid */
+.sm-gutters {
+    @apply ml-[-5px] mr-[-5px];
+}
+.sm-gutters > .col,
+.sm-gutters > [class*="col-"] {
+    @apply px-[5px];
+}

@@ -1,0 +1,13 @@
+/* 1.25 Sweet Alert */
+.swal-button {
+  @apply text-base rounded-[3px] focus:shadow-none;
+}
+.swal-button.swal-button--confirm {
+  @apply shadow-[0_2px_6px_#acb5f6] bg-[#6777ef] focus:opacity-80;
+}
+.swal-footer {
+  @apply text-center;
+}
+.swal-text {
+  @apply text-center leading-6 font-medium;
+}

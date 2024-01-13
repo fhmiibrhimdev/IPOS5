@@ -1,0 +1,11 @@
+/* 1.16 jQVmap */
+.jqvmap-circle {
+  @apply inline-block w-[13px] h-[13px] bg-white rounded-[50%] border-[3px] border-solid border-[#6777ef];
+}
+.jqvmap-label {
+  @apply z-[889];
+}
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+  @apply h-auto w-auto;
+}

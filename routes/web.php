@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Livewire\Dashboard\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,17 +16,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/register', function () {
+    return view('register');
+});
 
 Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', Dashboard::class);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::group(['middleware' => ['auth', 'role:admin']], function() {
+});
+
+Route::group(['middleware' => ['auth', 'role:user']], function() {
+
 });
 
 require __DIR__.'/auth.php';

@@ -1,0 +1,52 @@
+/* 3.13 Media */
+.media {
+    @apply flex items-start;
+}
+.media-body {
+    @apply flex-1;
+}
+.media .media-right {
+    @apply float-right text-[#6777ef] font-semibold text-base;
+}
+.media .media-icon {
+    @apply text-xl leading-none mr-[15px];
+}
+.media .media-title {
+    @apply font-semibold text-[15px] text-[#34395e] mt-0 mb-[5px];
+}
+.media .media-title a {
+    @apply font-[inherit] text-black;
+}
+.media .media-description {
+    @apply leading-6 text-[#34395e];
+}
+.media .media-links {
+    @apply mt-2.5;
+}
+.media .media-links a {
+    @apply text-xs text-[#999];
+}
+.media .media-progressbar {
+    @apply flex-1;
+}
+.media .media-progressbar .progress-text {
+    @apply text-xs font-semibold text-[#34395e] mb-[5px];
+}
+.media .media-cta {
+    @apply ml-10;
+}
+.media .media-cta .btn {
+    @apply text-xs px-[15px] py-[5px] rounded-[30px];
+}
+.media .media-items {
+    @apply flex;
+}
+.media .media-items .media-item {
+    @apply flex-1 text-center px-[15px] py-0;
+}
+.media .media-items .media-item .media-label {
+    @apply font-semibold text-xs text-[#34395e] tracking-[0.5px];
+}
+.media .media-items .media-item .media-value {
+    @apply font-bold text-lg;
+}

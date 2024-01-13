@@ -1,0 +1,299 @@
+/* 3.12 Button */
+.buttons .btn {
+    @apply ml-0 mr-2 mt-0 mb-2.5;
+}
+.btn:focus {
+    @apply shadow-none;
+    outline: none;
+}
+.btn:active {
+    @apply shadow-none;
+    outline: none;
+}
+.btn:active:focus {
+    @apply shadow-none;
+    outline: none;
+}
+.btn.btn-icon-split i,
+.dropdown-item.has-icon i {
+    @apply text-center w-[15px] text-[15px] float-left mr-2.5;
+}
+.btn {
+    @apply font-semibold text-xs leading-6 tracking-[0.5px] px-[0.8rem] py-[0.3rem];
+}
+.btn.btn-icon-split {
+    @apply relative;
+}
+.btn.btn-icon-split i {
+    @apply absolute h-full w-[45px] leading-8 rounded-[3px_0_0_3px] left-0 top-0;
+}
+.btn.btn-icon-split div {
+    @apply ml-10;
+}
+.btn.btn-icon-noflo-splitat {
+    @apply table text-right;
+}
+.btn.btn-icon-noflo-splitat i {
+    @apply float-none table-cell align-middle w-[30%] m-0;
+}
+.btn.btn-icon-noflo-splitat div {
+    @apply table-cell align-middle w-[70%] text-left pl-2.5;
+}
+.btn:not(.btn-social):not(.btn-social-icon):active,
+.btn:not(.btn-social):not(.btn-social-icon):focus,
+.btn:not(.btn-social):not(.btn-social-icon):hover {
+    @apply border-transparent;
+}
+.btn > i {
+    @apply !ml-0;
+}
+.btn.btn-lg {
+    @apply text-xs !px-6 !py-[0.8rem];
+}
+.btn.btn-lg.btn-icon-split i {
+    @apply leading-[42px];
+}
+.btn.btn-lg.btn-icon-split div {
+    @apply ml-[25px];
+}
+.btn.btn-sm {
+    @apply text-xs !px-[0.4rem] !py-[0.35rem];
+}
+.btn.btn-icon .ion,
+.btn.btn-icon .fas,
+.btn.btn-icon .far,
+.btn.btn-icon .fab,
+.btn.btn-icon .fal {
+    @apply text-xs ml-0;
+}
+.btn.btn-icon.icon-left .ion,
+.btn.btn-icon.icon-left .fas,
+.btn.btn-icon.icon-left .far,
+.btn.btn-icon.icon-left .fab,
+.btn.btn-icon.icon-left .fal {
+    @apply mr-[3px];
+}
+.btn.btn-icon.icon-right .ion,
+.btn.btn-icon.icon-right .fas,
+.btn.btn-icon.icon-right .far,
+.btn.btn-icon.icon-right .fab,
+.btn.btn-icon.icon-right .fal {
+    @apply ml-[3px];
+}
+.btn-action {
+    @apply !text-white leading-[25px] text-xs min-w-[35px] min-h-[35px];
+}
+.btn-secondary,
+.btn-secondary.disabled {
+    @apply shadow-[0_2px_6px_#e1e5e8] bg-[#cdd3d8] text-white border-[#cdd3d8];
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.disabled:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary.disabled:active {
+    @apply bg-[#bfc6cd] text-white;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active,
+.btn-outline-secondary.disabled:hover,
+.btn-outline-secondary.disabled:focus,
+.btn-outline-secondary.disabled:active {
+    @apply bg-[#cdd3d8] text-white;
+}
+.btn-success,
+.btn-success.disabled {
+    @apply shadow-[0_2px_6px_#a8f5b4] bg-[#63ed7a] text-white border-[#63ed7a];
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.disabled:hover,
+.btn-success.disabled:focus,
+.btn-success.disabled:active {
+    @apply bg-[#4cea67] text-white;
+}
+.btn-outline-success:hover,
+.btn-outline-success:focus,
+.btn-outline-success:active,
+.btn-outline-success.disabled:hover,
+.btn-outline-success.disabled:focus,
+.btn-outline-success.disabled:active {
+    @apply bg-[#63ed7a] text-white;
+}
+.btn-danger,
+.btn-danger.disabled {
+    @apply shadow-[0_2px_6px_#fd9b96] bg-[#fc544b] text-white border-[#fc544b];
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.disabled:hover,
+.btn-danger.disabled:focus,
+.btn-danger.disabled:active {
+    @apply bg-[#fb160a];
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:focus,
+.btn-outline-danger:active,
+.btn-outline-danger.disabled:hover,
+.btn-outline-danger.disabled:focus,
+.btn-outline-danger.disabled:active {
+    @apply bg-[#fb160a] text-white;
+}
+.btn-dark,
+.btn-dark.disabled {
+    @apply shadow-[0_2px_6px_#728394] bg-[#191d21] text-white border-[#191d21];
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.disabled:hover,
+.btn-dark.disabled:focus,
+.btn-dark.disabled:active {
+    @apply bg-[black];
+}
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active,
+.btn-outline-dark.disabled:hover,
+.btn-outline-dark.disabled:focus,
+.btn-outline-dark.disabled:active {
+    @apply bg-[black] text-white;
+}
+.btn-light,
+.btn-light.disabled {
+    @apply shadow-[0_2px_6px_#e6ecf1] bg-[#e3eaef] text-[#191d21] border-[#e3eaef];
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.disabled:hover,
+.btn-light.disabled:focus,
+.btn-light.disabled:active {
+    @apply bg-[#c3d2dc];
+}
+.btn-outline-light,
+.btn-outline-light.disabled {
+    @apply text-[#e3eaef] border-[#e3eaef];
+}
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active,
+.btn-outline-light.disabled:hover,
+.btn-outline-light.disabled:focus,
+.btn-outline-light.disabled:active {
+    @apply bg-[#e3eaef] text-white;
+}
+.btn-warning,
+.btn-warning.disabled {
+    @apply shadow-[0_2px_6px_#ffc473] bg-[#ffa426] text-white border-[#ffa426];
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.disabled:hover,
+.btn-warning.disabled:focus,
+.btn-warning.disabled:active {
+    @apply bg-[#ff990d] text-white;
+}
+.btn-outline-warning:hover,
+.btn-outline-warning:focus,
+.btn-outline-warning:active,
+.btn-outline-warning.disabled:hover,
+.btn-outline-warning.disabled:focus,
+.btn-outline-warning.disabled:active {
+    @apply bg-[#ffa426] text-white;
+}
+.btn-info,
+.btn-info.disabled {
+    @apply shadow-[0_2px_6px_#82d3f8] bg-[#3abaf4] text-white border-[#3abaf4];
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.disabled:hover,
+.btn-info.disabled:focus,
+.btn-info.disabled:active {
+    @apply bg-[#0da8ee];
+}
+.btn-outline-info:hover,
+.btn-outline-info:focus,
+.btn-outline-info:active,
+.btn-outline-info.disabled:hover,
+.btn-outline-info.disabled:focus,
+.btn-outline-info.disabled:active {
+    @apply bg-[#0da8ee] text-white;
+}
+.btn-primary,
+.btn-primary.disabled {
+    @apply shadow-[0_2px_6px_#acb5f6] bg-[#6777ef] border-[#6777ef];
+}
+.btn-primary:focus,
+.btn-primary.disabled:focus {
+    @apply bg-[#394eea];
+}
+.btn-primary:focus:active,
+.btn-primary.disabled:focus:active {
+    @apply bg-[#394eea];
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary.disabled:active,
+.btn-primary.disabled:hover {
+    @apply bg-[#394eea];
+}
+.btn-outline-primary,
+.btn-outline-primary.disabled {
+    @apply text-[#6777ef] border-[#6777ef];
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.disabled:hover,
+.btn-outline-primary.disabled:focus,
+.btn-outline-primary.disabled:active {
+    @apply bg-[#6777ef] text-white;
+}
+.btn-outline-white,
+.btn-outline-white.disabled {
+    @apply text-white border-white;
+}
+.btn-outline-white:hover,
+.btn-outline-white:focus,
+.btn-outline-white:active,
+.btn-outline-white.disabled:hover,
+.btn-outline-white.disabled:focus,
+.btn-outline-white.disabled:active {
+    @apply bg-white text-[#6777ef];
+}
+.btn-round {
+    @apply px-[34px] rounded-[30px];
+}
+.btn-social-icon,
+.btn-social {
+    @apply rounded-[3px] border-none;
+}
+.btn-social-icon {
+    @apply text-white px-[18px];
+}
+.btn-social-icon > :first-child {
+    @apply text-base;
+}
+.btn-social {
+    @apply text-white font-medium pl-[50px] pr-3 py-3;
+}
+.btn-social > :first-child {
+    @apply w-[55px] leading-[50px] border-r-[none];
+}
+.btn-reddit {
+    @apply text-black;
+}
+.btn-group .btn.active {
+    @apply bg-[#6777ef] text-white;
+}
+.btn-progress {
+    @apply relative bg-[url("../img/spinner-white.svg")] bg-center bg-no-repeat bg-[30px] text-transparent pointer-events-none;
+}

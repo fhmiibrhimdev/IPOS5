@@ -1,0 +1,128 @@
+.btn:focus,
+.btn:active,
+.btn:active:focus,
+.custom-select:focus,
+.form-control:focus {
+    @apply shadow-none;
+    outline: none;
+}
+a {
+    @apply text-[#6777ef] font-medium transition-all duration-[0.5s];
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
+    @apply ml-1;
+}
+.bg-primary {
+    @apply bg-[#6777ef];
+}
+.bg-secondary {
+    @apply bg-[#cdd3d8];
+}
+.bg-success {
+    @apply bg-[#63ed7a];
+}
+.bg-info {
+    @apply bg-[#3abaf4];
+}
+.bg-warning {
+    @apply bg-[#ffa426];
+}
+.bg-danger {
+    @apply bg-[#fc544b];
+}
+.bg-light {
+    @apply bg-[#e3eaef];
+}
+.bg-dark {
+    @apply bg-[#191d21];
+}
+.text-primary,
+.text-primary-all *,
+.text-primary-all *:before,
+.text-primary-all *:after {
+    @apply text-[#6777ef];
+}
+.text-secondary,
+.text-secondary-all *,
+.text-secondary-all *:before,
+.text-secondary-all *:after {
+    @apply text-[#cdd3d8];
+}
+.text-success,
+.text-success-all *,
+.text-success-all *:before,
+.text-success-all *:after {
+    @apply text-[#63ed7a];
+}
+.text-info,
+.text-info-all *,
+.text-info-all *:before,
+.text-info-all *:after {
+    @apply text-[#3abaf4];
+}
+.text-warning,
+.text-warning-all *,
+.text-warning-all *:before,
+.text-warning-all *:after {
+    @apply text-[#ffa426];
+}
+.text-danger,
+.text-danger-all *,
+.text-danger-all *:before,
+.text-danger-all *:after {
+    @apply text-[#fc544b];
+}
+.text-light,
+.text-light-all *,
+.text-light-all *:before,
+.text-light-all *:after {
+    @apply text-[#e3eaef];
+}
+
+.text-white-all *,
+.text-white-all *:before,
+.text-white-all *:after {
+    @apply text-white;
+}
+.text-dark,
+.text-dark-all *,
+.text-dark-all *:before,
+.text-dark-all *:after {
+    @apply text-[#191d21];
+}
+.font-weight-normal {
+    @apply font-medium;
+}
+.lead {
+    @apply leading-[34px];
+}
+@media (max-width: 575.98px) {
+    .lead {
+        @apply text-[17px] leading-[30px];
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-bold;
+}
+p,
+ul:not(.list-unstyled),
+ol {
+    @apply leading-7;
+}
+.shadow {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)];
+}
+.text-muted {
+    @apply text-[#98a6ad];
+}

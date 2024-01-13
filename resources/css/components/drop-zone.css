@@ -1,0 +1,23 @@
+/* 1.10 Dropzone */
+.dropzone {
+  @apply min-h-[240px] text-center border-2 border-dashed border-[#6777ef];
+}
+.dropzone .dz-message {
+  @apply text-2xl text-[#34395e] m-[3.4em];
+}
+.dropzone .dz-preview .dz-details {
+  @apply px-[1em] py-[2.2em];
+}
+.dropzone .dz-preview .dz-image {
+  @apply rounded-[3px];
+}
+@media (max-width: 575.98px) {
+  .dropzone .dz-message {
+      @apply m-[2em];
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .dropzone .dz-message {
+      @apply m-[2.75em];
+  }
+}

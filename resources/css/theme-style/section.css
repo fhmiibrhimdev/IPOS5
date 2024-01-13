@@ -1,0 +1,59 @@
+.section {
+    @apply relative z-[1];
+}
+.section > *:first-child {
+    @apply mt-[-7px];
+}
+.section .section-header {
+    @apply shadow-md shadow-gray-200 bg-white relative flex items-center mb-[30px] p-5 rounded-lg border-[none];
+}
+.section .section-header h1 {
+    @apply font-bold inline-block text-2xl text-[#34395e] mt-[3px] mb-0;
+}
+.section .section-header .section-header-back {
+    @apply mr-[15px];
+}
+.section .section-header .section-header-back .btn:hover {
+    @apply bg-[#6777ef] text-white;
+}
+.section .section-header .section-header-button {
+    @apply ml-5;
+}
+.section .section-header .section-header-breadcrumb {
+    @apply flex items-center ml-auto;
+}
+.section .section-header .section-header-breadcrumb .breadcrumb-item {
+    @apply text-xs;
+}
+.section .section-header .btn {
+    @apply text-xs;
+}
+.section .section-title {
+    @apply text-lg text-[#191d21] font-semibold relative mt-[30px] mb-[25px] mx-0 before:content-['_'] before:h-2 before:w-[30px] before:bg-[#6777ef] before:inline-block before:float-left before:mr-[15px] before:mt-1.5 before:rounded-[5px];
+}
+.section .section-title + .section-lead {
+    @apply -mt-5;
+}
+.section .section-lead {
+    @apply ml-[45px];
+}
+.main-wrapper-1 .section .section-header {
+    @apply ml-[-30px] mr-[-30px] -mt-2.5 px-[35px] rounded-none shadow-md shadow-gray-100;
+}
+@media (max-width: 575.98px) {
+    .section .section-title {
+        @apply text-sm;
+    }
+    .section .section-header {
+        @apply flex-wrap mb-5;
+    }
+    .section .section-header h1 {
+        @apply text-lg;
+    }
+    .section .section-header .float-right {
+        @apply inline-block w-full mt-[15px];
+    }
+    .section .section-header .section-header-breadcrumb {
+        @apply basis-full mt-2.5;
+    }
+}

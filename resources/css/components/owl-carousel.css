@@ -1,0 +1,10 @@
+/* 1.35 Owl Carousel */
+.owl-theme .owl-item {
+  @apply px-0 py-2.5;
+}
+.owl-theme .owl-dots {
+  @apply mt-5;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  @apply bg-[#6777ef];
+}

@@ -1,0 +1,55 @@
+.alert {
+    @apply text-white px-5 py-[15px] border-[none];
+}
+.alert .alert-title {
+    @apply text-lg font-bold mb-[5px];
+}
+.alert code {
+    @apply bg-white px-1 py-px rounded-[3px];
+}
+.alert p {
+    @apply mb-0;
+}
+.alert.alert-has-icon {
+    @apply flex;
+}
+.alert.alert-has-icon .alert-icon {
+    @apply w-[30px] mt-1;
+}
+.alert.alert-has-icon .alert-icon .ion,
+.alert.alert-has-icon .alert-icon .fas,
+.alert.alert-has-icon .alert-icon .far,
+.alert.alert-has-icon .alert-icon .fab,
+.alert.alert-has-icon .alert-icon .fal {
+    @apply text-xl;
+}
+.alert.alert-has-icon .alert-body {
+    @apply flex-1;
+}
+.alert:not(.alert-light) a {
+    @apply text-white;
+}
+.alert.alert-primary {
+    @apply bg-[#6777ef];
+}
+.alert.alert-secondary {
+    @apply bg-[#cdd3d8];
+}
+.alert.alert-success {
+    @apply bg-[#63ed7a];
+}
+.alert.alert-info {
+    @apply bg-[#3abaf4];
+}
+.alert.alert-warning {
+    @apply bg-[#ffa426];
+}
+.alert.alert-danger {
+    @apply bg-[#fc544b];
+}
+.alert.alert-light {
+    @apply bg-[#e3eaef] text-[#191d21];
+}
+.alert.alert-dark {
+    @apply bg-[#191d21];
+}

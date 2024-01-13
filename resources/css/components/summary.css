@@ -1,0 +1,16 @@
+/* 1.23 Summary */
+.summary {
+  @apply inline-block w-full;
+}
+.summary .summary-info {
+  @apply bg-[#eaf2f4] text-center px-0 py-[50px] rounded-[3px];
+}
+.summary .summary-info h4 {
+  @apply font-semibold;
+}
+.summary .summary-item {
+  @apply mt-5;
+}
+.summary .summary-item h6 {
+  @apply text-xs font-semibold mt-[5px] mb-5;
+}

@@ -1,0 +1,47 @@
+/* 1.39 Pricing */
+.pricing {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white relative text-center mb-[30px] rounded-lg border-[none];
+}
+.pricing.pricing-highlight .pricing-title {
+  @apply bg-[#6777ef] text-white;
+}
+.pricing.pricing-highlight .pricing-cta a {
+  @apply bg-[#6777ef] text-white hover:bg-[#394eea];
+}
+.pricing .pricing-padding {
+  @apply p-10;
+}
+.pricing .pricing-title {
+  @apply text-[10px] font-bold uppercase tracking-[2.5px] bg-[#f3f6f8] text-[#6777ef] inline-block px-[15px] py-[5px] rounded-[0_0_3px_3px];
+}
+.pricing .pricing-price {
+  @apply mb-[45px];
+}
+.pricing .pricing-price div:first-child {
+  @apply font-semibold text-[50px];
+}
+.pricing .pricing-details {
+  @apply text-left inline-block;
+}
+.pricing .pricing-details .pricing-item {
+  @apply flex mb-[15px];
+}
+.pricing .pricing-details .pricing-item .pricing-item-icon {
+  @apply w-5 h-5 leading-5 text-center bg-[#63ed7a] text-white mr-2.5 rounded-[50%];
+}
+.pricing .pricing-details .pricing-item .pricing-item-icon i {
+  @apply text-[11px];
+}
+.pricing .pricing-cta {
+  @apply mt-5;
+}
+.pricing .pricing-cta a {
+  @apply block bg-[#f3f6f8] uppercase tracking-[2.5px] text-sm font-bold no-underline px-10 py-5 rounded-[0_0_3px_3px] hover:bg-[#e3eaef];
+}
+.pricing .pricing-cta a .fas,
+.pricing .pricing-cta a .far,
+.pricing .pricing-cta a .fab,
+.pricing .pricing-cta a .fal,
+.pricing .pricing-cta a .ion {
+  @apply ml-[5px];
+}

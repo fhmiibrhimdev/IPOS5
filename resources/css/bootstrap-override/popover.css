@@ -1,0 +1,30 @@
+/* 3.16 Popover */
+.popover {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] border-transparent;
+}
+.popover .manual-arrow {
+    @apply absolute bottom-[-15px] text-[26px] -translate-x-2/4 text-white left-2/4;
+    -webkit-transform: translateX(-50%);
+}
+.bs-popover-auto[x-placement^="left"] .arrow::before,
+.bs-popover-left .arrow::before {
+    @apply border-l-[#f2f2f2];
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow::before,
+.bs-popover-bottom .arrow::before {
+    @apply border-b-[#f2f2f2];
+}
+.bs-popover-auto[x-placement^="top"] .arrow::before,
+.bs-popover-top .arrow::before {
+    @apply border-t-[#f2f2f2];
+}
+.bs-popover-auto[x-placement^="right"] .arrow::before,
+.bs-popover-right .arrow::before {
+    @apply border-r-[#f2f2f2];
+}
+.popover .popover-header {
+    @apply bg-transparent pt-2.5 pb-0 border-[none];
+}
+.popover .popover-body {
+    @apply leading-6 p-[15px];
+}

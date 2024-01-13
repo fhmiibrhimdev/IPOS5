@@ -1,0 +1,47 @@
+/* 1.29 User Item */
+.user-item {
+  @apply text-center;
+}
+.user-item img {
+  @apply px-5 rounded-[50%];
+}
+.user-item .user-details {
+  @apply mt-2.5;
+}
+.user-item .user-details .user-name {
+  @apply font-semibold text-[#191d21] whitespace-nowrap overflow-hidden text-ellipsis;
+}
+.user-item .user-details .user-cta {
+  @apply mt-2.5;
+}
+.user-item .user-details .user-cta .btn {
+  @apply text-xs px-[15px] py-[5px] rounded-[30px];
+}
+@media (max-width: 575.98px) {
+  .user-progress .media,
+  .user-details .media {
+      @apply text-center inline-block w-full;
+  }
+  .user-progress .media img,
+  .user-details .media img {
+      @apply mb-2.5 m-0;
+  }
+  .user-progress .media .media-body,
+  .user-details .media .media-body {
+      @apply w-full;
+  }
+  .user-progress .media .media-items,
+  .user-details .media .media-items {
+      @apply w-full mx-0 my-5;
+  }
+  .user-progress .list-unstyled-noborder li:last-child,
+  .user-details .list-unstyled-noborder li:last-child {
+      @apply mb-0 pb-0;
+  }
+  .user-progress .media .media-progressbar {
+      @apply mt-2.5;
+  }
+  .user-progress .media .media-cta {
+      @apply ml-0 mt-5;
+  }
+}

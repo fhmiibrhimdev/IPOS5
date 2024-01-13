@@ -1,0 +1,3 @@
+.carousel .carousel-caption p {
+    @apply text-[13px] leading-6;
+}

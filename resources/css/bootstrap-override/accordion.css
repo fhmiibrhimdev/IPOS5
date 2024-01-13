@@ -1,0 +1,20 @@
+/* 3.15 Accordion */
+.accordion {
+    @apply inline-block w-full mb-2.5;
+}
+.accordion .accordion-header,
+.accordion .accordion-body {
+    @apply px-[15px] py-2.5;
+}
+.accordion .accordion-header {
+    @apply bg-[#f9f9f9] cursor-pointer transition-all duration-[0.5s] rounded-[3px] hover:bg-[#f2f2f2];
+}
+.accordion .accordion-header h4 {
+    @apply leading-none text-sm font-bold m-0;
+}
+.accordion .accordion-body {
+    @apply leading-6;
+}
+.accordion .accordion-header[aria-expanded="true"] {
+    @apply shadow-[0_2px_6px_#acb5f6] bg-[#6777ef] text-white
+}

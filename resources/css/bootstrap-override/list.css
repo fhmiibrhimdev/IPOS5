@@ -1,0 +1,39 @@
+.list-unstyled-border li {
+    @apply mb-[15px] pb-[15px] border-b-[#f9f9f9] border-b border-solid border-transparent last:mb-0 last:pb-0 last:border-b-[none];
+}
+.list-unstyled-border li .custom-checkbox {
+    @apply mr-[15px];
+}
+.list-unstyled-noborder li:last-child {
+    @apply border-b-[none];
+}
+.list-group-item.active {
+    @apply bg-[#6777ef];
+}
+.list-group-item.disabled {
+    @apply text-[#c9d7e0];
+}
+.list-group-item-primary {
+    @apply bg-[#6777ef] text-white;
+}
+.list-group-item-secondary {
+    @apply bg-[#cdd3d8] text-white;
+}
+.list-group-item-success {
+    @apply bg-[#63ed7a] text-white;
+}
+.list-group-item-danger {
+    @apply bg-[#fc544b] text-white;
+}
+.list-group-item-warning {
+    @apply bg-[#ffa426] text-white;
+}
+.list-group-item-info {
+    @apply bg-[#3abaf4] text-white;
+}
+.list-group-item-light {
+    @apply bg-[#e3eaef] text-[#191d21];
+}
+.list-group-item-dark {
+    @apply bg-[#191d21] text-white;
+}

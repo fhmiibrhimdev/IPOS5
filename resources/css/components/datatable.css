@@ -1,0 +1,21 @@
+/* 1.8 DataTables */
+table.dataTable {
+  @apply border-collapse;
+}
+table.dataTable thead th,
+table.dataTable thead td {
+  @apply border-b-[#ddd] border-b border-transparent;
+}
+table.dataTable.no-footer {
+  @apply border-b-[#ddd] border-b border-transparent;
+}
+.dataTables_wrapper {
+  @apply text-[13px] p-0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  @apply float-left m-0 p-0;
+}
+div.dataTables_wrapper div.dataTables_processing {
+  @apply text-[0] bg-[url("../img/spinner.svg")] bg-white bg-[100%] w-[50px] h-[50px] shadow-[0_4px_8px_rgba(0,0,0,0.03)] -translate-x-2/4 -translate-y-2/4 opacity-100 m-0 border-[none] left-2/4 top-2/4;
+  -webkit-transform: translate(-50%, -50%) !important;
+}

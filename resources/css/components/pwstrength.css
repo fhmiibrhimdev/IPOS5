@@ -1,0 +1,42 @@
+/* 1.32 PWStrength */
+.pwindicator {
+  @apply w-[150px] mt-1;
+}
+.pwindicator .bar {
+  @apply h-0.5;
+}
+.pw-very-weak .bar {
+  @apply w-[30px];
+  background: #d00;
+}
+.pw-very-weak .label {
+  @apply text-[#d00];
+}
+.pw-weak .bar {
+  @apply w-[60px];
+  background: #d00;
+}
+.pw-weak .label {
+  @apply text-[#d00];
+}
+.pw-mediocre .bar {
+  @apply w-[90px];
+  background: #f3f01a;
+}
+.pw-mediocre .label {
+  @apply text-[#f3f01a];
+}
+.pw-strong .bar {
+  @apply w-[120px];
+  background: #f3b31a;
+}
+.pw-strong .label {
+  @apply text-[#f3b31a];
+}
+.pw-very-strong .bar {
+  @apply w-[150px];
+  background: #0d0;
+}
+.pw-very-strong .label {
+  @apply text-[#0d0];
+}

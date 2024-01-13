@@ -1,0 +1,44 @@
+/* 1.42 Wizard */
+.wizard-steps {
+  @apply flex mb-[60px] -mx-2.5 my-0;
+  counter-reset: wizard-counter;
+}
+.wizard-steps .wizard-step {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white relative shadow-[0_4px_8px_rgba(0,0,0,0.05)] text-center grow basis-0 mb-[30px] mx-2.5 my-0 p-[30px] rounded-[3px] border-[none] before:content-[counter(wizard-counter)] before:absolute before:-translate-x-2/4 before:w-5 before:h-5 before:leading-[21px] before:text-[10px] before:font-bold before:bg-[#e3eaef] before:rounded-[50%] before:left-2/4 before:-bottom-10;
+}
+.wizard-steps .wizard-step:before {
+  counter-increment: wizard-counter;
+}
+.wizard-steps .wizard-step.wizard-step-active {
+  @apply shadow-[0_2px_6px_#acb5f6] bg-[#6777ef] text-white before:bg-[#6777ef] before:text-white;
+}
+.wizard-steps .wizard-step.wizard-step-success {
+  @apply bg-[#63ed7a] text-white before:bg-[#63ed7a] before:text-white;
+}
+.wizard-steps .wizard-step.wizard-step-danger {
+  @apply bg-[#fc544b] text-white before:bg-[#fc544b] before:text-white;
+}
+.wizard-steps .wizard-step.wizard-step-warning {
+  @apply bg-[#ffa426] text-white before:bg-[#ffa426] before:text-white;
+}
+.wizard-steps .wizard-step.wizard-step-info {
+  @apply bg-[#3abaf4] text-white before:bg-[#3abaf4] before:text-white;
+}
+.wizard-steps .wizard-step .wizard-step-icon .fas,
+.wizard-steps .wizard-step .wizard-step-icon .far,
+.wizard-steps .wizard-step .wizard-step-icon .fab,
+.wizard-steps .wizard-step .wizard-step-icon .fal,
+.wizard-steps .wizard-step .wizard-step-icon .ion {
+  @apply text-[34px] mb-[15px];
+}
+.wizard-steps .wizard-step .wizard-step-label {
+  @apply text-[10px] uppercase tracking-[1px] font-bold;
+}
+@media (max-width: 575.98px) {
+  .wizard-steps {
+      @apply block;
+  }
+  .wizard-steps .wizard-step {
+      @apply mb-[50px];
+  }
+}

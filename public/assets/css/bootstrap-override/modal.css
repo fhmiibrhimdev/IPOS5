@@ -1,0 +1,29 @@
+.modal-header,
+.modal-body,
+.modal-footer {
+    @apply p-[25px];
+}
+.modal-body {
+    @apply pt-[15px];
+}
+.modal-footer {
+    @apply py-[15px] rounded-[0_0_3px_3px] border-t-[none];
+}
+.modal-header {
+    @apply pb-[5px] border-b-[none];
+}
+.modal-header h5 {
+    @apply text-lg;
+}
+.modal-content {
+    @apply max-w-full shadow-[0_3px_8px_rgba(0,0,0,0.05)] border-[none];
+}
+.modal.show .modal-content {
+    @apply shadow-[0_4px_15px_rgba(0,0,0,0.2)];
+}
+.modal-progress .modal-content {
+    @apply relative after:content-['_'] after:absolute after:w-full after:h-full after:bg-[rgba(255,255,255,0.5)] after:z-[999] after:bg-[url("../img/spinner.svg")] after:bg-[80px] after:bg-no-repeat after:bg-center after:rounded-[3px] after:left-0 after:top-0;
+}
+.modal-part {
+    @apply hidden;
+}

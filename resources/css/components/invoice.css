@@ -1,0 +1,27 @@
+/* 1.37 Invoice */
+.invoice {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white relative mb-[30px] p-10 rounded-[3px] border-[none];
+}
+.invoice .invoice-title .invoice-number {
+  @apply float-right text-xl font-bold mt-[-45px];
+}
+.invoice hr {
+  @apply my-10 border-t-[#f9f9f9];
+}
+.invoice .invoice-detail-item {
+  @apply mb-[15px];
+}
+.invoice .invoice-detail-item .invoice-detail-name {
+  @apply tracking-[0.3px] text-[#98a6ad] mb-1;
+}
+.invoice .invoice-detail-item .invoice-detail-value {
+  @apply text-lg text-[#34395e] font-bold;
+}
+.invoice .invoice-detail-item .invoice-detail-value.invoice-detail-value-lg {
+  @apply text-2xl;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table-invoice table {
+      @apply min-w-[800px];
+  }
+}

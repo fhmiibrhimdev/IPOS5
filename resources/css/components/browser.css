@@ -1,0 +1,19 @@
+/* 1.4 Browser */
+.browser {
+  @apply inline-block w-[60px] h-[60px] bg-[100%];
+}
+.browser.browser-chrome {
+  @apply bg-[url("../img/browsers/chrome.png")];
+}
+.browser.browser-firefox {
+  @apply bg-[url("../img/browsers/firefox.png")];
+}
+.browser.browser-internet-explorer {
+  @apply bg-[url("../img/browsers/internet-explorer.png")];
+}
+.browser.browser-opera {
+  @apply bg-[url("../img/browsers/opera.png")];
+}
+.browser.browser-safari {
+  @apply bg-[url("../img/browsers/safari.png")];
+}

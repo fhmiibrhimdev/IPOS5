@@ -1,0 +1,14 @@
+/* 1.21 Sparkline */
+.jqstooltip {
+  @apply box-content;
+}
+.sparkline-bar,
+.sparkline-line,
+.sparkline-inline {
+  @apply w-full;
+}
+.sparkline-bar canvas,
+.sparkline-line canvas,
+.sparkline-inline canvas {
+  @apply w-full;
+}

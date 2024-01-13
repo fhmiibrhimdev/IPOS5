@@ -1,0 +1,49 @@
+/* 1.12 Full Calendar */
+.fc-toolbar h2 {
+  @apply text-base mt-1;
+}
+.fc-view {
+  @apply text-[#34395e] font-medium p-2.5 border-[#f2f2f2] text-right;
+}
+.fc-view > table {
+  @apply border-[#f2f2f2];
+}
+.fc-view > table tr,
+.fc-view > table td {
+  @apply border-[#f2f2f2];
+}
+.fc-view > table th {
+  @apply text-[#34395e] font-medium p-2.5 border-[#f2f2f2];
+}
+.fc-view-container > .fc-view {
+  @apply p-0;
+}
+.fc-view > table td {
+  @apply text-[#666] text-right;
+}
+.fc-unthemed td.fc-today {
+  @apply bg-[#f2f2f2];
+}
+.fc button .fc-icon {
+  @apply top-[-0.09em];
+}
+.fc-basic-view .fc-day-number,
+.fc-basic-view .fc-week-number {
+  @apply p-2.5;
+}
+.fc-day-grid-event .fc-content {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] px-2.5 py-[5px];
+}
+tr:first-child > td > .fc-day-grid-event {
+  @apply mb-2.5;
+}
+.fc-state-default {
+  @apply bg-[#f2f2f2] bg-none shadow-none capitalize font-medium rounded-[3px] border-[none];
+}
+.fc button {
+  @apply h-auto px-[15px] py-2.5 rounded-none;
+  text-shadow: none;
+}
+.fc button.fc-state-active {
+  @apply bg-[#6777ef] text-white;
+}

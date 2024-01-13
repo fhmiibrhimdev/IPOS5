@@ -1,0 +1,36 @@
+/* 1.30 Weather */
+.weather .weather-icon {
+  @apply float-left w-[150px] text-center leading-10;
+}
+.weather .weather-icon span {
+  @apply text-6xl mt-[30px];
+}
+.weather .weather-desc {
+  @apply ml-40;
+}
+.weather .weather-desc h4 {
+  @apply text-[70px] font-extralight leading-[56px] mt-[30px] mb-[5px] m-0;
+}
+.weather .weather-desc .weather-text {
+  @apply text-xs text-[#34395e] font-semibold tracking-[1px] uppercase mt-2.5;
+}
+.weather .weather-desc ul {
+  @apply mt-[15px] mb-[13px] mx-0 p-0;
+}
+.weather ul li {
+  @apply inline-block leading-none text-[10px] font-medium text-[#6777ef] uppercase tracking-[1px] mr-2.5 mb-2.5 p-2.5 rounded-[3px] border-2 border-solid border-[#6777ef];
+}
+@media (max-width: 575.98px) {
+  .weather {
+      @apply text-center;
+  }
+  .weather .weather-icon {
+      @apply float-none w-auto;
+  }
+  .weather .weather-icon span {
+      @apply mt-5;
+  }
+  .weather .weather-desc {
+      @apply ml-0;
+  }
+}

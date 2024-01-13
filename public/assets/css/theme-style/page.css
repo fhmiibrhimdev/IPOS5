@@ -1,0 +1,26 @@
+.page-error {
+    @apply h-full w-full text-center table pt-[60px];
+}
+.page-error .page-inner {
+    @apply table-cell w-full align-middle;
+}
+.page-error h1 {
+    @apply text-[10em] font-bold;
+}
+.page-error .page-description {
+    @apply text-lg font-normal text-[#34395e];
+}
+.page-error .page-search {
+    @apply max-w-full w-[350px] mx-auto my-10;
+}
+.page-error .page-search .form-control {
+    @apply rounded-[30px];
+}
+.page-error .page-search .btn {
+    @apply ml-2.5 rounded-[30px];
+}
+@media (max-width: 575.98px) {
+    .page-error .page-search {
+        @apply w-full;
+    }
+}

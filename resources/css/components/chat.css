@@ -1,0 +1,48 @@
+/* 1.5 Chat */
+.chat-box .chat-content {
+  @apply bg-[#f9f9f9] h-[300px] overflow-hidden pt-[25px];
+}
+.chat-box .chat-content .chat-item {
+  @apply inline-block w-full mb-[25px];
+}
+.chat-box .chat-content .chat-item.chat-right img {
+  @apply float-right;
+}
+.chat-box .chat-content .chat-item.chat-right .chat-details {
+  @apply text-right ml-0 mr-[70px];
+}
+.chat-box .chat-content .chat-item.chat-right .chat-details .chat-text {
+  @apply text-left bg-[#6777ef] text-white;
+}
+.chat-box .chat-content .chat-item > img {
+  @apply float-left w-[50px] rounded-[50%];
+}
+.chat-box .chat-content .chat-item .chat-details {
+  @apply ml-[70px];
+}
+.chat-box .chat-content .chat-item .chat-details .chat-text {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white w-auto inline-block text-xs px-[15px] py-2.5 rounded-[3px];
+}
+.chat-box .chat-content .chat-item .chat-details .chat-text img {
+  @apply max-w-full mb-2.5;
+}
+.chat-box .chat-content .chat-item.chat-typing .chat-details .chat-text {
+  @apply bg-[url("../img/typing.svg")] h-10 w-[60px] bg-center bg-[60%] bg-no-repeat;
+}
+.chat-box .chat-content .chat-item .chat-details .chat-time {
+  @apply text-xs font-medium opacity-60 mt-[5px];
+}
+.chat-box .chat-form {
+  @apply relative p-0;
+}
+.chat-box .chat-form .form-control {
+  @apply h-[50px] text-[13px] font-medium shadow-none pr-[70px] p-[15px] border-[none];
+  outline: none;
+}
+.chat-box .chat-form .btn {
+  @apply w-10 h-10 absolute right-[-5px] -translate-x-2/4 -translate-y-2/4 shadow-[0_4px_8px_rgba(0,0,0,0.03)] p-0 rounded-[50%] top-2/4;
+  -webkit-transform: translate(-50%, -50%);
+}
+.chat-box .chat-form .btn i {
+  @apply ml-0;
+}

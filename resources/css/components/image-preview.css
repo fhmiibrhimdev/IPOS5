@@ -1,0 +1,20 @@
+/* 1.14 Image Preview */
+.image-preview,
+#callback-preview {
+    @apply w-[250px] h-[250px] relative overflow-hidden bg-white text-[#ecf0f1] rounded-[3px] border-2 border-dashed border-[#ddd];
+}
+.image-preview input,
+#callback-preview input {
+    @apply leading-[200px] text-[200px] absolute opacity-0 z-10;
+}
+.image-preview label,
+#callback-preview label {
+    @apply absolute z-[5] opacity-80 cursor-pointer bg-[#bdc3c7] w-[150px] h-[50px] text-xs leading-[50px] uppercase text-center m-auto inset-0;
+}
+.audio-preview {
+    @apply w-auto inline-block p-5;
+    background: #ffffff;
+}
+.audio-upload {
+    @apply cursor-pointer bg-[#bdc3c7] text-[#ecf0f1] text-xl uppercase p-5;
+}

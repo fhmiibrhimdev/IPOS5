@@ -1,0 +1,22 @@
+/* 1.36 Activities */
+.activities {
+  @apply flex flex-wrap;
+}
+.activities .activity {
+  @apply w-full flex relative before:content-["_"] before:absolute before:w-0.5 before:h-full before:bg-[#6777ef] before:left-[25px] before:top-0 last:before:hidden;
+}
+.activities .activity .activity-icon {
+  @apply w-[50px] h-[50px] leading-[50px] text-xl text-center shrink-0 text-center z-[1] mr-5 rounded-[3px] rounded-[50%];
+}
+.activities .activity .activity-detail {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white relative relative mb-[30px] p-[15px] rounded-[3px] border-[none] before:content-[""] before:font-black before:text-xl before:absolute before:text-white before:-left-2;
+}
+.activities .activity .activity-detail:before {
+  font-family: "Font Awesome 5 Free";
+}
+.activities .activity .activity-detail h4 {
+  @apply text-lg text-[#191d21];
+}
+.activities .activity .activity-detail p {
+  @apply mb-0;
+}

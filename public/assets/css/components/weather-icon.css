@@ -1,0 +1,22 @@
+/* 1.31 Weather Icon */
+.icon-wrap {
+  @apply inline-block w-[calc(100%_/_4)] mb-[25px] px-[15px];
+}
+.icon-wrap .icon {
+  @apply float-left w-10 text-xl;
+  font-family: "weathericons";
+}
+.icon-wrap .icon_unicode {
+  @apply w-full text-[#34395e] pl-[45px];
+}
+.new-icons ul {
+  @apply m-0 p-0;
+  list-style: none;
+}
+.new-icons ul li {
+  @apply p-2.5;
+}
+.icon-wrap .icon,
+.new-icons ul li .wi {
+  @apply text-2xl w-[30px] text-center mr-[15px];
+}

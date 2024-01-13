@@ -1,0 +1,182 @@
+:root {
+    /* Colors */
+    --primary: color(primary);
+    --secondary: color(fontdark);
+    --success: color(success);
+    --info: color(info);
+    --warning: color(warning);
+    --danger: color(danger);
+    --light: color(light);
+    --dark: color(dark);
+}
+body {
+    @apply bg-[#fafdfb] text-sm font-normal text-[#6c757d] leading-[1.5];
+    font-family: "Nunito", "Segoe UI", arial;
+}
+a.bb {
+    @apply no-underline pb-px border-b-[#6777ef];
+}
+.form-divider {
+    @apply inline-block w-full text-base font-semibold mx-0 my-2.5;
+}
+.ui-sortable-handle,
+.sort-handler {
+    @apply cursor-move;
+}
+.text-job {
+    @apply text-[10px] uppercase tracking-[1px] font-bold text-[#34395e];
+}
+.text-time {
+    @apply text-xs text-[#666] font-medium mb-2.5;
+}
+.bullet,
+.slash {
+    @apply inline mx-1 my-0;
+}
+.bullet:after {
+    @apply content-['\2022'];
+}
+.slash:after {
+    @apply content-['/'];
+}
+.login-brand {
+    @apply text-2xl uppercase tracking-[4px] text-[#666] text-center mb-10 mx-0 my-5;
+}
+.font-weight-600 {
+    @apply font-semibold;
+}
+.budget-price {
+    @apply inline-block w-full flex items-center mb-[3px];
+}
+.budget-price .budget-price-square {
+    @apply w-[15px] h-[3px] bg-[#f9f9f9];
+}
+.budget-price .budget-price-label {
+    @apply text-xs font-semibold ml-[5px];
+}
+.gradient-bottom {
+    @apply relative after:content-['_'] after:absolute after:w-full after:bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(255,255,255,0.4),rgba(255,255,255,0.8))] after:h-[60px] after:left-0 after:bottom-[41px];
+}
+.text-small {
+    @apply text-xs leading-5;
+}
+.text-title {
+    @apply text-sm text-[#34395e] font-semibold;
+}
+.img-shadow {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)];
+}
+.colors {
+    @apply flex flex-wrap mr-[-5px] ml-[-5px] my-0;
+}
+.colors .color {
+    @apply w-[calc((100%_/_4)_-_10px)] h-[60px] leading-10 text-center m-[5px] p-2.5 rounded-[3px];
+}
+blockquote {
+    @apply bg-[#f9f9f9] relative text-base tracking-[0.3px] pl-10 p-5 rounded-[3px] before:content-['"'] before:text-3xl before:absolute before:opacity-20 before:left-5 before:top-2.5;
+    font-style: oblique;
+    font-family: "Time new Romans";
+}
+blockquote .blockquote-footer {
+    @apply mt-2.5;
+}
+.bg-whitesmoke {
+    @apply !bg-[#f7f9f9];
+}
+.ion {
+    @apply text-[15px];
+}
+.fas,
+.far,
+.fab,
+.fal {
+    @apply text-[13px];
+}
+#visitorMap {
+    @apply h-[210px];
+}
+.sidebar-gone-show {
+    @apply hidden;
+}
+pre {
+    @apply rounded-[3px];
+}
+.circle-step {
+    @apply flex mb-2.5;
+}
+.circle-step .circle-content {
+    @apply ml-[13px] mt-[3px];
+}
+.circle-step .circle {
+    @apply inline-block w-8 h-8 leading-[30px] text-[11px] text-center rounded-[50%] border-2 border-solid;
+}
+.circle-step .circle.circle-primary {
+    @apply text-[#6777ef] border-[#6777ef];
+}
+.pe-none {
+    @apply pointer-events-none;
+}
+.contact-map {
+    @apply w-full h-full min-h-[400px];
+}
+#visitorMap2,
+#visitorMap3 {
+    @apply h-[350px];
+}
+.shadow-primary {
+    @apply shadow-[0_2px_6px_#acb5f6];
+}
+.shadow-secondary {
+    @apply shadow-[0_2px_6px_#e1e5e8];
+}
+.shadow-success {
+    @apply shadow-[0_2px_6px_#a8f5b4];
+}
+.shadow-warning {
+    @apply shadow-[0_2px_6px_#ffc473];
+}
+.shadow-danger {
+    @apply shadow-[0_2px_6px_#fd9b96];
+}
+.shadow-info {
+    @apply shadow-[0_2px_6px_#82d3f8];
+}
+.shadow-light {
+    @apply shadow-[0_2px_6px_#e6ecf1];
+}
+.shadow-dark {
+    @apply shadow-[0_2px_6px_#728394];
+}
+.is-online {
+    @apply w-2.5 h-2.5 bg-[#63ed7a] inline-block rounded-[50%];
+}
+.gutters-xs {
+    @apply mr-[-0.25rem] ml-[-0.25rem];
+}
+.gutters-xs > .col,
+.gutters-xs > [class*="col-"] {
+    @apply px-1;
+}
+.beep {
+    @apply relative after:content-[''] after:absolute after:w-[7px] after:h-[7px] after:bg-[#ffa426] after:animate-[pulsate_1s_ease-out] after:opacity-100 after:rounded-[50%] after:right-2 after:top-0.5;
+}
+.beep:after {
+    animation-iteration-count: infinite;
+}
+.beep.beep-sidebar:after {
+    @apply static ml-2.5;
+}
+@media (max-width: 575.98px) {
+    .fc-overflow {
+        @apply w-full overflow-auto;
+    }
+    .fc-overflow #myEvent {
+        @apply w-[800px];
+    }
+    .ionicons li {
+        @apply w-[calc(100%_/_4)];
+    }
+    .icon-wrap {
+        @apply w-full;
+    }
+}

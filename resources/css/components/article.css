@@ -1,0 +1,119 @@
+/* 1.1 Article */
+
+.article {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] bg-white relative mb-[30px] border-[none];
+}
+.article .article-header {
+    @apply h-[170px] relative overflow-hidden rounded-t-lg;
+}
+.article .article-header .article-image {
+    @apply bg-[#fbfbfb] bg-center bg-cover bg-no-repeat w-full h-full z-[-1];
+}
+.article .article-header .article-title {
+    @apply absolute w-full p-2.5 left-0 bottom-0;
+background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.01) 1%,
+    rgba(0, 0, 0, 0.65) 98%,
+    rgba(0, 0, 0, 0.65) 100%
+);
+}
+.article .article-header .article-title h2 {
+    @apply text-base leading-6;
+}
+.article .article-header .article-title h2 a {
+    @apply font-bold no-underline text-white;
+}
+.article .article-details {
+    @apply bg-white leading-6 p-5;
+}
+.article .article-details .article-cta {
+    @apply text-center;
+}
+.article .article-header .article-badge {
+    @apply absolute left-2.5 bottom-2.5;
+}
+.article .article-header .article-badge .article-badge-item {
+    @apply font-semibold text-white text-xs px-[15px] py-[7px] rounded-[30px];
+}
+.article .article-header .article-badge .article-badge-item .ion,
+.article .article-header .article-badge .article-badge-item .fas,
+.article .article-header .article-badge .article-badge-item .far,
+.article .article-header .article-badge .article-badge-item .fab,
+.article .article-header .article-badge .article-badge-item .fal {
+    @apply mr-[3px];
+}
+.article.article-style-b .article-details .article-title {
+    @apply mb-2.5;
+}
+.article.article-style-b .article-details .article-title h2 {
+    @apply leading-[22px];
+}
+.article.article-style-b .article-details .article-title a {
+    @apply text-base font-semibold;
+}
+.article.article-style-b .article-details p {
+    @apply text-[#34395e];
+}
+.article.article-style-b .article-details .article-cta {
+    @apply text-right;
+}
+.article.article-style-c .article-header {
+    @apply h-[233px];
+}
+.article.article-style-c .article-details .article-category {
+    @apply uppercase tracking-[1px] text-[#34395e] mb-[5px];
+}
+.article.article-style-c .article-details .article-category a {
+    @apply text-[10px] text-[#34395e] font-bold;
+}
+.article.article-style-c .article-details .article-title {
+    @apply mb-2.5;
+}
+.article.article-style-c .article-details .article-title h2 {
+    @apply leading-[22px];
+}
+.article.article-style-c .article-details .article-title a {
+    @apply text-base font-semibold;
+}
+.article.article-style-c .article-details p {
+    @apply text-[#34395e];
+}
+.article.article-style-c .article-user {
+    @apply inline-block w-full mt-5;
+}
+.article.article-style-c .article-user img {
+    @apply float-left w-[45px] mr-[15px] rounded-[50%];
+}
+.article.article-style-c .article-user .user-detail-name {
+    @apply overflow-hidden whitespace-nowrap text-ellipsis;
+}
+.article.article-style-c .article-user .user-detail-name a {
+    @apply font-bold;
+}
+@media (max-width: 575.98px) {
+    .article .article-style-c .article-header {
+        @apply h-[225px];
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .article {
+        @apply mb-10;
+    }
+    .article .article-header {
+        @apply h-[195px];
+    }
+    .article.article-style-c .article-header {
+        @apply h-[155px];
+    }
+}
+@media (max-width: 1024px) {
+    .article.article-style-c .article-header {
+        @apply h-[216px];
+    }
+    .article .article-header {
+        @apply h-[155px];
+    }
+}
+  

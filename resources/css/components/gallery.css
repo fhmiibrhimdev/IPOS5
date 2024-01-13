@@ -1,0 +1,28 @@
+/* 1.13 Gallery */
+.gallery {
+  @apply inline-block w-full;
+}
+.gallery .gallery-item {
+  @apply float-left inline-block w-[50px] h-[50px] bg-no-repeat bg-cover bg-center cursor-pointer transition-all duration-[0.5s] relative mr-[7px] mb-[7px] rounded-[3px] hover:opacity-80;
+}
+.gallery .gallery-hide {
+  @apply hidden;
+}
+.gallery .gallery-more:after {
+  @apply content-["_"] absolute w-full h-full z-[1] bg-[rgba(0,0,0,0.5)] rounded-[3px] left-0 top-0;
+}
+.gallery .gallery-more div {
+  @apply text-center leading-[50px] font-semibold relative z-[2] text-white;
+}
+.gallery.gallery-md .gallery-item {
+  @apply w-[78px] h-[78px] mr-2.5 mb-2.5;
+}
+.gallery.gallery-md .gallery-more div {
+  @apply leading-[78px];
+}
+.gallery.gallery-fw .gallery-item {
+  @apply w-full mb-[15px];
+}
+.gallery.gallery-fw .gallery-more div {
+  @apply text-xl;
+}

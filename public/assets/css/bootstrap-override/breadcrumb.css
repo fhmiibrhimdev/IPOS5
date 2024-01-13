@@ -1,0 +1,10 @@
+/* 3.14 Breadcrumb */
+.breadcrumb {
+    @apply bg-[#f9f9f9];
+}
+.breadcrumb .breadcrumb-item {
+    @apply leading-none;
+}
+.breadcrumb .breadcrumb-item i {
+    @apply mr-[5px];
+}

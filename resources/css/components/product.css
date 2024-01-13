@@ -1,0 +1,19 @@
+/* 1.33 Product */
+.product-item {
+  @apply text-center;
+}
+.product-item .product-image {
+  @apply inline-block overflow-hidden w-20 h-20 mb-2.5 rounded-[3px];
+}
+.product-item .product-name {
+  @apply text-[#34395e] font-bold mb-[3px];
+}
+.product-item .product-review {
+  @apply text-[#ffa426] mb-[3px];
+}
+.product-item .product-cta {
+  @apply mt-[5px];
+}
+.product-item .product-cta a {
+  @apply mt-2.5 px-[15px];
+}

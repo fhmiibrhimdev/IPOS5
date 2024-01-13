@@ -1,0 +1,40 @@
+/* 1.28 Toast */
+#toast-container > div {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] opacity-100 pl-[50px] pr-5 py-5;
+}
+#toast-container > .toast {
+  @apply bg-none before:absolute before:text-2xl before:leading-[18px] before:text-white before:left-[17px] before:top-[25px];
+}
+#toast-container > .toast:before {
+  font-family: "Ionicons";
+}
+#toast-container > .toast-warning:before {
+  @apply content-[""];
+}
+#toast-container > .toast-error:before {
+  @apply content-[""];
+}
+#toast-container > .toast-info:before {
+  @apply content-[""] text-black;
+}
+#toast-container > .toast-success:before {
+  @apply content-[""];
+}
+.toast.toast-error {
+  @apply bg-[#fc544b];
+}
+.toast.toast-warning {
+  @apply bg-[#ffa426];
+}
+.toast.toast-success {
+  @apply bg-[#63ed7a];
+}
+.toast.toast-info {
+  @apply bg-white;
+}
+.toast.toast-info .toast-title {
+  @apply text-black;
+}
+.toast.toast-info .toast-message {
+  @apply text-black mt-[5px];
+}

@@ -1,0 +1,13 @@
+/* 3.10 Pagination */
+.page-item .page-link {
+    @apply text-[#6777ef] mx-[3px] my-0 rounded-[3px];
+}
+.page-item.active .page-link {
+    @apply bg-[#6777ef] border-[#6777ef];
+}
+.page-item.disabled .page-link {
+    @apply bg-[#f9fafe] text-[#6777ef] opacity-60 border-transparent;
+}
+.page-link {
+    @apply bg-[#f9fafe] font-semibold border-transparent hover:bg-[#6777ef] hover:text-white hover:border-transparent focus:shadow-none;
+}

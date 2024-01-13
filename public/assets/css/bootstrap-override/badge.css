@@ -1,0 +1,58 @@
+/* 3.11 Badge */
+.badges .badge {
+    @apply ml-0 mr-2 mt-0 mb-2.5;
+}
+.badge {
+    @apply align-middle font-semibold tracking-[0.3px] text-xs px-3 py-[7px] rounded-[30px];
+}
+.badge.badge-warning {
+    @apply text-white;
+}
+.badge.badge-primary {
+    @apply bg-[#6777ef];
+}
+.badge.badge-secondary {
+    @apply bg-[#34395e];
+}
+.badge.badge-success {
+    @apply bg-[#63ed7a];
+}
+.badge.badge-info {
+    @apply bg-[#3abaf4];
+}
+.badge.badge-danger {
+    @apply bg-[#fc544b];
+}
+.badge.badge-light {
+    @apply bg-[#e3eaef] text-[#191d21];
+}
+.badge.badge-white {
+    @apply bg-white text-[#191d21];
+}
+.badge.badge-dark {
+    @apply bg-[#191d21];
+}
+h1 .badge {
+    @apply text-2xl px-[21px] py-4;
+}
+h2 .badge {
+    @apply text-[22px] px-[19px] py-3.5;
+}
+h3 .badge {
+    @apply text-lg px-4 py-[11px];
+}
+h4 .badge {
+    @apply text-base px-[13px] py-2;
+}
+h5 .badge {
+    @apply text-sm px-2.5 py-[5px];
+}
+h6 .badge {
+    @apply text-[11px] px-2 py-[3px];
+}
+.btn .badge {
+    @apply ml-[5px] px-[7px] py-1;
+}
+.btn .badge.badge-transparent {
+    @apply bg-[rgba(255,255,255,0.25)] text-white;
+}

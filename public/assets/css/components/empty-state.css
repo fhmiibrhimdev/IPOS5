@@ -1,0 +1,16 @@
+/* 1.38 Empty States */
+.empty-state {
+  @apply text-center flex items-center justify-center flex-col p-10;
+}
+.empty-state .empty-state-icon {
+  @apply relative bg-[#6777ef] w-20 h-20 leading-[100px] rounded-[5px];
+}
+.empty-state .empty-state-icon i {
+  @apply text-[40px] text-white relative z-[1];
+}
+.empty-state h2 {
+  @apply text-xl mt-[30px];
+}
+.empty-state p {
+  @apply text-base;
+}

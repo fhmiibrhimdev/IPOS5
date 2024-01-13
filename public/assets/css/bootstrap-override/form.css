@@ -1,0 +1,247 @@
+.form-control,
+.input-group-text,
+.custom-select,
+.custom-file-label {
+    @apply bg-[#fdfdff] border-[#e4e6fc];
+}
+.form-control:focus,
+.input-group-text:focus,
+.custom-select:focus,
+.custom-file-label:focus {
+    @apply bg-[#fefeff] border-[#95a0f4];
+}
+.input-group-text,
+select.form-control:not([size]):not([multiple]),
+.form-control:not(.form-control-sm):not(.form-control-lg) {
+    @apply text-sm h-[42px] px-[15px] py-2.5;
+}
+textarea.form-control {
+    @apply h-16;
+}
+.custom-control {
+    @apply leading-[1.6rem];
+}
+.custom-file,
+.custom-file-label,
+.custom-select,
+.custom-file-label:after,
+.form-control[type="color"],
+select.form-control:not([size]):not([multiple]) {
+    @apply h-[calc(2.25rem_+_6px)];
+}
+.form-control.creditcard {
+    @apply bg-[98%] bg-no-repeat bg-[40px] pr-[60px];
+}
+.form-control.creditcard.visa {
+    @apply bg-[url("../img/visa.png")] bg-[url("../img/visa.png")];
+}
+.form-control.creditcard.americanexpress {
+    @apply bg-[url("../img/americanexpress.png")];
+}
+.form-control.creditcard.dinersclub {
+    @apply bg-[url("../img/dinersclub.png")];
+}
+.form-control.creditcard.discover {
+    @apply bg-[url("../img/discover.png")];
+}
+.form-control.creditcard.jcb {
+    @apply bg-[url("../img/jcb.png")];
+}
+.form-control.creditcard.mastercard {
+    @apply bg-[url("../img/mastercard.png")];
+}
+.form-group {
+    @apply mb-[25px];
+}
+.form-group .control-label,
+.form-group > label {
+    @apply font-semibold text-[#34395e] text-xs tracking-[0.5px];
+}
+.form-group.floating-addon {
+    @apply relative;
+}
+.form-group.floating-addon .input-group-prepend {
+    @apply absolute h-full z-[5] left-0 top-0;
+}
+.form-group.floating-addon:not(.floating-addon-not-append) .input-group-append {
+    @apply absolute z-[5] left-[initial] top-0 inset-x-0;
+}
+.form-group.floating-addon .input-group-prepend .input-group-text,
+.form-group.floating-addon .input-group-append .input-group-text {
+    @apply bg-transparent text-xl border-transparent;
+}
+.form-group.floating-addon .form-control {
+    @apply pl-10 rounded-[3px];
+}
+.form-group.floating-addon .form-control + .form-control {
+    @apply pl-[15px] rounded-[0_3px_3px_0];
+}
+.input-group-append [class*="btn-outline-"] {
+    @apply bg-[#fdfdff];
+}
+.form-text {
+    @apply text-xs leading-[22px];
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before {
+    @apply bg-[#6777ef];
+}
+.custom-file-label {
+    @apply leading-[2.2] after:h-[calc(2.25rem_+_4px)] after:leading-[2.2] after:border-transparent;
+}
+.custom-file-label:focus,
+.custom-file-label:active {
+    @apply shadow-none;
+    outline: none;
+}
+.custom-file-input:focus + .custom-file-label {
+    @apply shadow-none border-[#6777ef] after:border-transparent;
+}
+.selectgroup {
+    @apply inline-flex;
+    display: -ms-inline-flexbox;
+}
+.selectgroup-item {
+    @apply grow relative;
+    -ms-flex-positive: 1;
+}
+.selectgroup-item + .selectgroup-item {
+    @apply -ml-px;
+}
+.selectgroup-item:not(:first-child) .selectgroup-button {
+    @apply rounded-tl-none rounded-bl-none;
+}
+.selectgroup-item:not(:last-child) .selectgroup-button {
+    @apply rounded-tr-none rounded-br-none;
+}
+.selectgroup-input {
+    @apply opacity-0 absolute z-[-1] left-0 top-0;
+}
+.selectgroup-button {
+    @apply bg-[#fdfdff] border block text-center h-[35px] relative cursor-pointer select-none text-[13px] min-w-[2.375rem] leading-9 px-4 py-0 rounded-[3px] border-[#e4e6fc] border-solid;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.selectgroup-button-icon {
+    @apply px-2;
+}
+.selectgroup-button-icon i {
+    @apply text-sm;
+}
+.selectgroup-input:focus + .selectgroup-button,
+.selectgroup-input:checked + .selectgroup-button {
+    @apply bg-[#6777ef] text-white z-[1];
+}
+.selectgroup-pills {
+    @apply block flex-wrap items-start;
+    -ms-flex-wrap: wrap;
+    -ms-flex-align: start;
+}
+.selectgroup-pills .selectgroup-item {
+    @apply grow-0 mr-2;
+    -ms-flex-positive: 0;
+}
+.selectgroup-pills .selectgroup-button {
+    @apply rounded-[50px];
+}
+.custom-switch {
+    @apply select-none cursor-default inline-flex items-center m-0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: -ms-inline-flexbox;
+    -ms-flex-align: center;
+}
+.custom-switch-input {
+    @apply absolute z-[-1] opacity-0;
+}
+.custom-switches-stacked {
+    @apply flex flex-col;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+}
+.custom-switches-stacked .custom-switch {
+    @apply mb-2;
+}
+.custom-switch-indicator {
+    @apply inline-block h-5 w-9 relative align-bottom border transition-[0.3s] duration-[border-color,0.3s] ease-[background-color] rounded-[50px] border-solid border-[rgba(0,40,100,0.12)] before:content-[''] before:absolute before:h-[calc(1.25rem_-_4px)] before:w-[calc(1.25rem_-_4px)] before:transition-[0.3s] before:duration-[left] before:rounded-[50%] before:left-px before:top-px;
+    background: #e9ecef;
+}
+.custom-switch-indicator:before {
+    background: #fff;
+}
+.custom-switch-input:checked ~ .custom-switch-indicator {
+    background: #6777ef;
+}
+.custom-switch-input:checked ~ .custom-switch-indicator:before {
+    @apply left-[calc(1rem_+_1px)];
+}
+.custom-switch-input:focus ~ .custom-switch-indicator {
+    @apply border-[#6777ef];
+}
+.custom-switch-description {
+    @apply text-[#6e7687] transition-[0.3s] duration-[color] ml-2;
+}
+.custom-switch-input:checked ~ .custom-switch-description {
+    @apply text-[#495057];
+}
+.imagecheck {
+    @apply relative cursor-pointer m-0;
+}
+.imagecheck-input {
+    @apply absolute z-[-1] opacity-0;
+}
+.imagecheck-figure {
+    @apply bg-[#fdfdff] border relative m-0 rounded-[3px] border-[#e4e6fc] border-solid before:content-[''] before:absolute before:block before:w-4 before:h-4 before:pointer-events-none before:select-none before:text-white before:z-[1] before:opacity-0 before:transition-[0.3s] before:duration-[opacity] before:rounded-[3px] before:left-1 before:top-1;
+}
+.imagecheck-input:focus ~ .imagecheck-figure {
+    @apply border-[#6777ef];
+}
+.imagecheck-input:checked ~ .imagecheck-figure {
+    @apply border-[rgba(0,40,100,0.24)] before:opacity-100;
+}
+.imagecheck-figure:before {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background: #6777ef
+        url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
+        no-repeat center center/50% 50%;
+}
+.imagecheck-image {
+    @apply max-w-full opacity-[0.64] transition-[0.3s] duration-[opacity] first:rounded-t-sm last:rounded-br-sm last:rounded-bl-sm;
+}
+.imagecheck:hover .imagecheck-image {
+    @apply opacity-100;
+}
+.imagecheck-input:focus ~ .imagecheck-figure .imagecheck-image,
+.imagecheck-input:checked ~ .imagecheck-figure .imagecheck-image {
+    @apply opacity-100;
+}
+.imagecheck-caption {
+    @apply text-center text-[#9aa0ac] text-sm transition-[0.3s] duration-[color] p-1;
+}
+.imagecheck:hover .imagecheck-caption {
+    @apply text-[#495057];
+}
+.imagecheck-input:focus ~ .imagecheck-figure .imagecheck-caption,
+.imagecheck-input:checked ~ .imagecheck-figure .imagecheck-caption {
+    @apply text-[#495057];
+}
+.colorinput {
+    @apply relative cursor-pointer m-0;
+}
+.colorinput-input {
+    @apply absolute z-[-1] opacity-0;
+}
+.colorinput-color {
+    @apply bg-[#fdfdff] border inline-block w-7 h-7 text-white shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] rounded-[3px] border-[#e4e6fc] border-solid before:content-[''] before:opacity-0 before:absolute before:h-5 before:w-5 before:transition-[0.3s] before:duration-[opacity] before:left-1 before:top-1;
+}
+.colorinput-color:before {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
+        no-repeat center center/50% 50%;
+}
+.colorinput-input:checked ~ .colorinput-color:before {
+    @apply opacity-100;
+}

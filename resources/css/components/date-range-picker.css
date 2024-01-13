@@ -1,0 +1,22 @@
+/* 1.9 Date Range Picker */
+.daterangepicker.dropdown-menu {
+  @apply w-auto;
+}
+.daterangepicker .input-mini {
+  @apply pl-7;
+}
+.daterangepicker .calendar th,
+.daterangepicker .calendar td {
+  @apply text-xs p-[5px];
+}
+.ranges li {
+  @apply text-[#6777ef];
+}
+.ranges li:hover,
+.ranges li.active {
+  @apply bg-[#6777ef];
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  @apply bg-[#6777ef];
+}

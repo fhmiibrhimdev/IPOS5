@@ -1,0 +1,7 @@
+/* 1.6 Chocolat */
+.chocolat-wrapper {
+  @apply z-[890];
+}
+.chocolat-overlay {
+  @apply bg-black;
+}

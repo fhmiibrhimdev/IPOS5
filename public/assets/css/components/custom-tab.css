@@ -1,0 +1,7 @@
+/* 1.7 Custom Tab */
+[data-tab-group] {
+  @apply hidden;
+}
+[data-tab-group].active {
+  @apply block;
+}

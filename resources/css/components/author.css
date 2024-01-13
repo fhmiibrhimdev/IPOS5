@@ -1,0 +1,33 @@
+/* 1.2 Author */
+.author-box .author-box-left {
+  @apply float-left text-center pl-[5px];
+}
+.author-box .author-box-left .btn {
+  @apply text-xs px-[15px] py-[5px] rounded-[30px];
+}
+.author-box .author-box-picture {
+  @apply w-[100px] shadow-[0_4px_8px_rgba(0,0,0,0.03)];
+}
+.author-box .author-box-details {
+  @apply ml-[135px];
+}
+.author-box .author-box-name {
+  @apply text-lg;
+}
+.author-box .author-box-name a {
+  @apply font-semibold;
+}
+.author-box .author-box-job {
+  @apply font-semibold tracking-[0.5px] text-xs text-[#34395e];
+}
+.author-box .author-box-description {
+  @apply leading-[26px] mt-[15px];
+}
+@media (max-width: 575.98px) {
+  .author-box .author-box-left {
+      @apply float-none;
+  }
+  .author-box .author-box-details {
+      @apply text-center ml-0 mt-[15px];
+  }
+}

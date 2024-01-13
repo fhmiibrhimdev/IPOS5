@@ -1,0 +1,13 @@
+/* 1.24 Summernote */
+.note-editor.note-frame {
+  @apply border shadow-none rounded-[3px] border-solid border-[#ededed];
+}
+.note-toolbar {
+  @apply !relative !pl-[5px] !pr-0 !pt-0 !pb-[5px];
+}
+.note-toolbar.card-header {
+  @apply h-auto !block !min-h-[auto];
+}
+.note-toolbar .note-btn {
+  @apply text-xs bg-transparent shadow-none border-transparent;
+}

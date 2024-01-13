@@ -1,0 +1,169 @@
+/* 3.18 Navbar */
+.navbar {
+    @apply h-[70px] absolute z-[890] bg-transparent left-[250px] right-[5px] items-center;
+}
+.navbar.active {
+    @apply bg-[#6777ef] shadow-[rgba(103,119,239,0.2)_rgba(0,0,0,0.03)];
+}
+.navbar-bg {
+    @apply content-['_'] absolute w-full h-[115px] bg-[#6777ef] z-[-1] left-0 top-0;
+}
+.navbar .navbar-brand {
+    @apply text-white uppercase tracking-[3px] font-bold;
+}
+.navbar .form-inline .form-control {
+    @apply bg-white min-h-[46px] font-medium transition-all duration-[1s] -mr-1.5 pl-5 pr-0 rounded-[3px_0_0_3px] border-transparent;
+}
+.navbar .form-inline .form-control:focus,
+.navbar .form-inline .form-control:focus + .btn {
+    @apply relative z-[9001];
+}
+.navbar .form-inline .form-control:focus + .btn + .search-backdrop {
+    @apply opacity-60 visible;
+}
+.navbar
+    .form-inline
+    .form-control:focus
+    + .btn
+    + .search-backdrop
+    + .search-result {
+    @apply opacity-100 visible top-20;
+}
+.navbar .form-inline .btn {
+    @apply bg-white !px-[15px] !py-[9px] rounded-[0_3px_3px_0] border-transparent;
+}
+.navbar .form-inline .search-backdrop {
+    @apply fixed w-full h-full z-[9000] bg-black opacity-0 invisible transition-all duration-[0.5s] left-0 top-0;
+}
+.navbar .form-inline .search-result {
+    @apply absolute z-[9002] bg-white w-[450px] opacity-0 invisible transition-all duration-[0.5s] rounded-[3px] top-[100px] before:absolute before:top-[-26px] before:content-['\f0d8'] before:font-semibold before:text-white before:text-3xl before:left-[34px];
+}
+.navbar .form-inline .search-result:before {
+    font-family: "Font Awesome 5 Free";
+}
+.navbar .form-inline .search-result .search-header {
+    @apply uppercase tracking-[1.3px] font-semibold text-[10px] text-[#bcc1c6] pt-[13px] pb-0.5 px-[18px];
+}
+.navbar .form-inline .search-result .search-item {
+    @apply flex;
+}
+.navbar .form-inline .search-result .search-item a {
+    @apply block no-underline text-[#34395e] font-semibold flex items-center px-[18px] py-[13px] hover:bg-[#fbfbff];
+}
+.navbar .form-inline .search-result .search-item a:not(.search-close) {
+    @apply w-full;
+}
+.navbar .form-inline .search-result .search-item a i {
+    @apply ml-0;
+}
+.navbar .form-inline .search-result .search-item .search-icon {
+    @apply w-[35px] h-[35px] leading-[35px] text-center rounded-[50%];
+}
+.navbar .active .nav-link {
+    @apply text-white font-bold;
+}
+.navbar .navbar-text {
+    @apply text-white;
+}
+.navbar .nav-link {
+    @apply text-[#f2f2f2] h-full !px-[15px] !py-0 hover:text-white;
+}
+.navbar .nav-link.nav-link-lg div {
+    @apply mt-[3px];
+}
+.navbar .nav-link.nav-link-lg i {
+    @apply text-lg leading-8 ml-0;
+}
+.navbar .nav-link.nav-link-user {
+    @apply text-white font-semibold py-1;
+}
+.navbar .nav-link.nav-link-user img {
+    @apply w-[30px];
+}
+.navbar .nav-link.nav-link-img {
+    @apply overflow-hidden py-1 rounded-[50%];
+}
+.navbar .nav-link.nav-link-img .flag-icon {
+    @apply shadow-[0_4px_8px_rgba(0,0,0,0.03)] leading-[18px] h-[22px] w-[22px] bg-cover rounded-[50%];
+}
+.remove-caret:after {
+    @apply hidden;
+}
+.navbar .nav-link.disabled {
+    @apply text-white opacity-60;
+}
+.nav-collapse {
+    @apply flex;
+}
+@media (max-width: 575.98px) {
+    body.search-show .navbar .form-inline .search-element {
+        @apply block;
+    }
+    .navbar .form-inline .search-element {
+        @apply absolute z-[892] hidden top-2.5 inset-x-2.5;
+    }
+    .navbar .form-inline .search-element .form-control {
+        @apply float-left w-[calc(100%_-_43px)] rounded-[3px_0_0_3px];
+    }
+    .navbar .form-inline .search-element .btn {
+        @apply mt-px rounded-[0_3px_3px_0];
+    }
+    .navbar .form-inline .search-result {
+        @apply w-full;
+    }
+    .navbar .form-inline .search-backdrop {
+        @apply hidden;
+    }
+    .navbar .nav-link.nav-link-lg div {
+        @apply hidden;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .form-inline .search-element {
+        @apply block;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .collapse {
+        @apply relative;
+    }
+    .collapse .navbar-nav {
+        @apply absolute;
+    }
+}
+@media (max-width: 1024px) {
+    .nav-collapse {
+        @apply relative;
+    }
+    .nav-collapse .navbar-nav {
+        @apply shadow-[0_0_30px_rgba(0,0,0,0.03)] absolute w-[200px] hidden left-0 top-10;
+    }
+    .nav-collapse .navbar-nav.show {
+        @apply block;
+    }
+    .nav-collapse .navbar-nav .nav-item:first-child {
+        @apply rounded-[3px_3px_0_0];
+    }
+    .nav-collapse .navbar-nav .nav-item:last-child {
+        @apply rounded-[0_0_3px_3px];
+    }
+    .nav-collapse .navbar-nav .nav-item .nav-link {
+        @apply bg-white text-[#6c757d] hover:bg-[#fcfcfd] hover:text-[#6777ef];
+    }
+    .nav-collapse .navbar-nav .nav-item:focus > a,
+    .nav-collapse .navbar-nav .nav-item.active > a {
+        @apply bg-[#6777ef] text-white;
+    }
+    .navbar {
+        @apply left-[5px] right-0;
+    }
+    .navbar .dropdown-menu {
+        @apply absolute;
+    }
+    .navbar .navbar-nav {
+        @apply flex-row;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu-right {
+        @apply left-auto right-0;
+    }
+}

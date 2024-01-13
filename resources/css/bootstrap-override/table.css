@@ -1,0 +1,36 @@
+.table td,
+.table:not(.table-bordered) th {
+    @apply border-t-[none] border-transparent;
+}
+.table:not(.table-sm):not(.table-md):not(.dataTable) td,
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {
+    @apply h-[60px] align-middle px-[25px] py-0;
+}
+.table:not(.table-sm) thead th {
+    @apply bg-[rgba(0,0,0,0.04)] text-[#666] py-[15px] border-b-[none] border-transparent;
+}
+.table.table-md th,
+.table.table-md td {
+    @apply px-[15px] py-2.5;
+}
+.table.table-bordered td,
+.table.table-bordered th {
+    @apply border-[#f6f6f6];
+}
+.table-links {
+    @apply text-[#34395e] text-xs opacity-0 transition-all duration-[0.3s] mt-[5px];
+}
+.table-links a {
+    @apply text-[#666];
+}
+table tr:hover .table-links {
+    @apply opacity-100;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    @apply bg-gray-50;
+}
+@media (max-width: 575.98px) {
+    .table-responsive table {
+        @apply min-w-[800px];
+    }
+}

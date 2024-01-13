@@ -1,0 +1,13 @@
+/* 1.15 IonIcons */
+.ionicons {
+  @apply flex flex-wrap m-0 p-0;
+}
+.ionicons li {
+  @apply w-[calc(100%_/_8)] text-[40px] text-center relative cursor-pointer px-5 py-10 rounded-[3px] hover:opacity-80;
+  list-style: none;
+}
+.ionicons li .icon-name {
+  @apply absolute w-full -translate-x-2/4 -translate-y-full text-xs leading-[22px] bg-[#f9f9f9] hidden mt-2.5 p-2.5 rounded-[3px] left-2/4 top-full;
+  -webkit-transform: translate(-50%, -100%);
+  font-family: "Segoe UI";
+}
