@@ -36,10 +36,6 @@
         @apply mb-1 text-lg tracking-wider;
     }
 
-    .card-body {
-        @apply px-0
-    }
-
     table {
         @apply w-full table-fixed;
     }
@@ -94,10 +90,6 @@
 
     .card {
         @apply rounded-none shadow-md shadow-gray-300 lg:rounded-lg;
-    }
-
-    .card > .card-body {
-        @apply px-0
     }
 
     .card > h3 {
