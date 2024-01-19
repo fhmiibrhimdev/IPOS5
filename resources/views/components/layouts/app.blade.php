@@ -22,6 +22,10 @@
         .dropdown-menu.show {
             display: block !important;
         }
+
+        textarea {
+            height: 150px !important;
+        }
     </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
