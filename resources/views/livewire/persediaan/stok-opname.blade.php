@@ -26,14 +26,14 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th width="10%">No</th>
-                                    <th>Tanggal</th>
-                                    <th>Nama Barang</th>
-                                    <th>Buku</th>
-                                    <th>Fisik</th>
-                                    <th>Selisih</th>
-                                    <th>Deskripsi</th>
-                                    <th class="text-center"><i class="fas fa-cogs"></i></th>
+                                    <th class="w-[8%] lg:w-[6%]">No</th>
+                                    <th class="w-[20%] lg:w-[12%]">Tanggal</th>
+                                    <th class="w-[25%] lg:w-[15%]">Nama Barang</th>
+                                    <th class="w-[11%] lg:w-[9%] text-right">Buku</th>
+                                    <th class="w-[11%] lg:w-[9%] text-right">Fisik</th>
+                                    <th class="w-[13%] lg:w-[9%] text-right">Selisih</th>
+                                    <th class="w-[20%] lg:w-[30%]">Deskripsi</th>
+                                    <th class="w-[10%] text-center"><i class="fas fa-cogs"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -42,9 +42,9 @@
                                         <td>{{ $loop->index + 1 }}</td>
                                         <td>{{ $row->tanggal }}</td>
                                         <td>{{ $row->nama_barang }}</td>
-                                        <td>{{ $row->buku }},00</td>
-                                        <td>{{ $row->fisik }},00</td>
-                                        <td>{{ $row->perbedaan }},00</td>
+                                        <td class="text-right">{{ $row->buku }},00</td>
+                                        <td class="text-right">{{ $row->fisik }},00</td>
+                                        <td class="text-right">{{ $row->perbedaan }},00</td>
                                         <td>{{ $row->deskripsi }}</td>
                                         <td class="text-center">
                                             <button wire:click.prevent="deleteConfirm({{ $row->id }})"

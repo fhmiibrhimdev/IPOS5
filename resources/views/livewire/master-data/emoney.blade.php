@@ -26,9 +26,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th width="10%">No</th>
-                                    <th width="35%">Kode</th>
-                                    <th>Keterangan</th>
+                                    <th class="w-[7%] lg:w-[]">No</th>
+                                    <th class="w-[15%] lg:w-[25%]">Kode</th>
+                                    <th class="w-[] lg:w-[25%]">Keterangan</th>
                                     <th class="text-center"><i class="fas fa-cogs"></i></th>
                                 </tr>
                             </thead>

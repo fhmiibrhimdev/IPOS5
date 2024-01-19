@@ -26,11 +26,11 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th width="10%">No</th>
-                                    <th>Tanggal</th>
-                                    <th>Nama Barang</th>
-                                    <th>Qty</th>
-                                    <th>Deskripsi</th>
+                                    <th class="w-[7%] lg:w-[5%]">No</th>
+                                    <th class="lg:w-[15%]">Tanggal</th>
+                                    <th class="lg:w-[10%]">Nama Barang</th>
+                                    <th class="text-right">Qty</th>
+                                    <th class="lg:w-[40%]">Deskripsi</th>
                                     <th class="text-center"><i class="fas fa-cogs"></i></th>
                                 </tr>
                             </thead>
@@ -40,7 +40,7 @@
                                         <td>{{ $loop->index + 1 }}</td>
                                         <td>{{ $row->tanggal }}</td>
                                         <td>{{ $row->nama_barang }}</td>
-                                        <td>{{ $row->qty }}</td>
+                                        <td class="text-right">{{ $row->qty }},00</td>
                                         <td>{{ $row->deskripsi }}</td>
                                         <td class="text-center">
                                             <button wire:click.prevent="edit({{ $row->id }})"
@@ -90,7 +90,8 @@
                         </div>
                         <div class="form-group">
                             <label for="id_barang">Nama Barang</label>
-                            <select wire:model="id_barang" id="id_barang" class="form-control">
+                            <select wire:model="id_barang" id="id_barang" class="form-control"
+                                @if ($isEditing) disabled @endif>
                                 @foreach ($barangs as $barang)
                                     <option value="{{ $barang->id }}">{{ $barang->nama_barang }}</option>
                                 @endforeach
