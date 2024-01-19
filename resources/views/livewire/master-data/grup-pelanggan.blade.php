@@ -29,7 +29,7 @@
                                     <th width="10%">No</th>
                                     <th>Kode</th>
                                     <th>Grup</th>
-                                    <th>Pot</th>
+                                    <th>Potongan</th>
                                     <th>Level Harga</th>
                                     <th class="text-center"><i class="fas fa-cogs"></i></th>
                                 </tr>

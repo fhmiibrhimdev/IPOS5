@@ -5,6 +5,7 @@ use App\Livewire\Dashboard\Dashboard;
 use App\Livewire\MasterData\Bank;
 use App\Livewire\MasterData\Emoney;
 use App\Livewire\MasterData\GrupPelanggan;
+use App\Livewire\MasterData\Item;
 use App\Livewire\MasterData\Jenis;
 use App\Livewire\MasterData\Pelanggan;
 use App\Livewire\MasterData\Satuan;
@@ -46,6 +47,8 @@ Route::group(['middleware' => ['auth', 'role:admin']], function() {
     Route::get('master-data/supplier', Supplier::class);
     Route::get('master-data/pelanggan', Pelanggan::class);
     Route::get('master-data/pelanggan/grup', GrupPelanggan::class);
+    
+    Route::get('master-data/item', Item::class);
 });
 
 Route::group(['middleware' => ['auth', 'role:user']], function() {
