@@ -10,6 +10,10 @@ use App\Livewire\MasterData\Jenis;
 use App\Livewire\MasterData\Pelanggan;
 use App\Livewire\MasterData\Satuan;
 use App\Livewire\MasterData\Supplier;
+use App\Livewire\Persediaan\SaldoAwalItem;
+use App\Livewire\Persediaan\StokKeluar;
+use App\Livewire\Persediaan\StokMasuk;
+use App\Livewire\Persediaan\StokOpname;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +53,11 @@ Route::group(['middleware' => ['auth', 'role:admin']], function() {
     Route::get('master-data/pelanggan/grup', GrupPelanggan::class);
     
     Route::get('master-data/item', Item::class);
+    
+    Route::get('persediaan/stok-masuk', StokMasuk::class);
+    Route::get('persediaan/stok-keluar', StokKeluar::class);
+    Route::get('persediaan/saldo-awal-item', SaldoAwalItem::class);
+    Route::get('persediaan/stok-opname', StokOpname::class);
 });
 
 Route::group(['middleware' => ['auth', 'role:user']], function() {
