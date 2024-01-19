@@ -10,4 +10,5 @@ class Satuan extends Model
     use HasFactory;
     protected $table   = "satuan";
     protected $guarded = [];
+    public $timestamps = false;
 }
