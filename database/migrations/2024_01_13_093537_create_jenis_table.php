@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('jenis', function (Blueprint $table) {
             $table->id();
+            $table->text('kode');
+            $table->text('keterangan');
             $table->timestamps();
         });
     }

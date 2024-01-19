@@ -81,7 +81,7 @@
                 <form>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="kode">Kode {{ $kode }}</label>
+                            <label for="kode">Kode</label>
                             <input type="text" wire:model="kode" id="kode" class="form-control">
                         </div>
                         <div class="form-group">
