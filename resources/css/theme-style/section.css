@@ -38,7 +38,7 @@
     @apply ml-[45px];
 }
 .main-wrapper-1 .section .section-header {
-    @apply ml-[-30px] mr-[-30px] -mt-2.5 px-[35px] rounded-none shadow-md shadow-gray-100;
+    @apply ml-[-30px] mr-[0] lg:mr-[-30px] -mt-2.5 px-[35px] rounded-none shadow-md shadow-gray-100;
 }
 @media (max-width: 575.98px) {
     .section .section-title {

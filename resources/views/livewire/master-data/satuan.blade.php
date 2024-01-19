@@ -58,6 +58,9 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="mt-5 px-3">
+                        {{ $data->links() }}
+                    </div>
                 </div>
             </div>
         </div>

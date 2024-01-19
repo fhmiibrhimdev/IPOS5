@@ -85,7 +85,7 @@
     }
 
     .main-content {
-        @apply px-0 lg:pl-[280px] lg:pr-[30px];
+        @apply pl-[0] pr-[0] lg:pl-[280px] lg:pr-[30px];
     }
 
     .card {

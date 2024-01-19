@@ -18,7 +18,7 @@ class Satuan extends Component
         'keterangan' => 'required',
     ];
 
-    public $lengthData = 25;
+    public $lengthData = 5;
     public $searchTerm;
     public $previousSearchTerm = '';
     public $isEditing = false;
