@@ -46,7 +46,7 @@ class StokMasuk extends Component
         $this->tanggal      = date('Y-m-d H:i');
         $this->id_barang    = Barang::min('id');
         $this->qty          = 1;
-        $this->deskripsi    = '-';
+        $this->deskripsi    = '[Masuk] ';
     }
 
     public function render()
@@ -122,7 +122,7 @@ class StokMasuk extends Component
         $this->tanggal      = date('Y-m-d H:i');
         $this->id_barang    = Barang::min('id');
         $this->qty          = 1;
-        $this->deskripsi    = '-';
+        $this->deskripsi    = '[Masuk] ';
     }
 
     public function cancel()

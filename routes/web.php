@@ -7,6 +7,7 @@ use App\Livewire\MasterData\Emoney;
 use App\Livewire\MasterData\GrupPelanggan;
 use App\Livewire\MasterData\Item;
 use App\Livewire\MasterData\Jenis;
+use App\Livewire\MasterData\KartuStok;
 use App\Livewire\MasterData\Pelanggan;
 use App\Livewire\MasterData\Satuan;
 use App\Livewire\MasterData\Supplier;
@@ -53,6 +54,7 @@ Route::group(['middleware' => ['auth', 'role:admin']], function() {
     Route::get('master-data/pelanggan/grup', GrupPelanggan::class);
     
     Route::get('master-data/item', Item::class);
+    Route::get('master-data/kartu-stok', KartuStok::class);
     
     Route::get('persediaan/stok-masuk', StokMasuk::class);
     Route::get('persediaan/stok-keluar', StokKeluar::class);

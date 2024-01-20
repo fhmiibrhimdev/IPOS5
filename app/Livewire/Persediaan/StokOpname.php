@@ -60,7 +60,7 @@ class StokOpname extends Component
         $this->buku         = 0;
         $this->fisik        = 0;
         $this->perbedaan    = 0;
-        $this->deskripsi    = '-';
+        $this->deskripsi    = '[Opname] ';
     }
 
     public function render()
@@ -111,7 +111,7 @@ class StokOpname extends Component
         $this->buku         = 0;
         $this->fisik        = 0;
         $this->perbedaan    = 0;
-        $this->deskripsi    = '-';
+        $this->deskripsi    = '[Opname] ';
     }
 
     public function cancel()
